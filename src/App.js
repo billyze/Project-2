@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 // import { Switch, Route } from 'react-router-dom'
 import Axios from 'axios'
+import Gif from './components/Gif'
+import Navbar from './components/Navbar'
 
 let api_key = "9W5UPEGYZVUVW53C"
 
@@ -15,19 +17,15 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    Axios.get("https://cors-anywhere.herokuapp.com/https://random.dog/woof.json")
-    .then(response => {
-      console.log(response)
-      this.setState({image:response.data, imageExists:true})
-    })
+
     Axios.get(`https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AAPL&interval=5min&apikey=${api_key}`)
     .then(response => {
-      console.log(response.data)
-      // this.setState({
-      //   company: {
-      //     name: response.data.Meta_Data
-      //   }
-      // })
+      console.log(response)
+      this.setState({
+        company: {
+          name: response.data.Meta_Data
+        }
+      })
     })
     Axios.get(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=AAPL&apikey=${api_key}`)
     .then(response => {
@@ -38,18 +36,13 @@ class App extends Component {
     })
   }
 
-  setImage = () => {
-    if(this.state.imageExists)
-    {
-      return <div><img width="500px" height="500px" alt="oops!" src={this.state.image.url} /></div>
-    }
-  }
 
   render() {
     return (
-      <div className="App">
-        {this.setImage()}
-        {this.state.name}
+      <div>
+      <Navbar/>
+        <Gif/>
+        {/* {this.state.name} */}
       </div>
     );
   }
