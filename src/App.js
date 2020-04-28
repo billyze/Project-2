@@ -8,20 +8,9 @@ import Home from './components/Home'
 import Company from './components/Company'
 // import Canvas from './Components/Canvas'
 class App extends Component {
-  
-  state = {
-    name: '',
-    image: [],
-    company: {},
-    imageExists: false
-  }
-
-  
-
-
   render() {
     return (  
-      <div className="App"> 
+      <div> 
       <Navbar/>
       <Gif/>
         {/* <Canvas></Canvas>   */}
@@ -30,7 +19,7 @@ class App extends Component {
           <Route exact path="/" component={(props) =>   <Home {...props} /> } />
           <Route path="/:companySymbol" component={(props) =>   <Company {...props} /> } />
         </Switch>
-        {this.state.name}
+        
         
 
       </div>
