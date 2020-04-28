@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-// import { Switch, Route } from 'react-router-dom'
+import SignIn from './Components/SignIn'
+import SignUp from './Components/SignUp'
+import { Switch, Route } from 'react-router-dom'
 import Axios from 'axios'
+// import {auth, createUserProfileDocument} from './Components/firebase/firebase.utils'
 
-let api_key = "9W5UPEGYZVUVW53C"
+let api_key = "9W5UPE"
 
 class App extends Component {
   
@@ -11,10 +14,20 @@ class App extends Component {
     name: '',
     image: [],
     company: {},
-    imageExists: false
+    imageExists: false,
+    // currentUser: null
   }
 
+// unsubscribeFromAuth = null;
+
   componentDidMount = () => {
+
+    // this.unsubscribeFromAuth = auth.onAuthStateChanged(user=>{
+    //   this.setState({currentUser: user})
+
+    //   console.log(user)
+    // })
+
     Axios.get("https://cors-anywhere.herokuapp.com/https://random.dog/woof.json")
     .then(response => {
       console.log(response)
@@ -38,6 +51,10 @@ class App extends Component {
     })
   }
 
+  // componentWillUnmount() {
+  //   this.unsubscribeFromAuth();
+  // }
+
   setImage = () => {
     if(this.state.imageExists)
     {
@@ -50,6 +67,20 @@ class App extends Component {
       <div className="App">
         {this.setImage()}
         {this.state.name}
+        <Route
+            exact
+            path="/SignIn"
+            component={(props) => (
+              <SignIn {...props} />
+            )}
+          />
+          <Route
+            exact
+            path="/SignUp"
+            component={(props) => (
+              <SignUp {...props} />
+            )}
+          />
       </div>
     );
   }
