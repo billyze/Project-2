@@ -11,9 +11,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { Link } from 'react-router-dom';
 import GoogleButton from 'react-google-button';
-import TestLog from './testLog';
 
-import { auth, signInWithGoogle } from './firebase/firebase.utils';
+import { auth, signInWithGoogle } from '../firebase/firebase.utils';
 
 function Copyright() {
   return (
@@ -154,9 +153,6 @@ export default function SignIn() {
       </div>
       <Box mt={8}>
         <Copyright />
-      </Box>
-      <Box>
-        <TestLog />
       </Box>
     </Container>
   );

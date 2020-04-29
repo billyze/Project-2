@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+import { auth, createUserProfileDocument } from './Components/firebase/firebase.utils';
 import { Link } from 'react-router-dom';
 
 const Header = ({ user }) => {
