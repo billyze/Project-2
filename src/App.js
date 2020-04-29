@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-// import { Switch, Route } from 'react-router-dom'
-import Gif from './Components/navbar/Gif';
 import Navbar from './Components/navbar/Navbar';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Components/home/Home';
@@ -58,7 +56,7 @@ class App extends Component {
       <div>
         <Navbar user={this.state.currentUser} />
         {/* This component needs to be moved, so it doesnt load in every view. */}
-        <Gif />
+        
         {/* <Canvas></Canvas>   */}
         {/* {this.setImage()} */}
         <Switch>
