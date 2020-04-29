@@ -73,11 +73,11 @@ export default function SearchAppBar({ user }) {
         <Toolbar>
         <Link to='/'><img
             width="30px"
-            src="https://cdn.clipart.email/9e77b379d33dd56bf49e01d46f0415d7_stock-market-trading-educational-video-lessons-understanding-_300-300.png"
+            src="./favicon.ico"
             alt="Logo"
           /></Link>
           <Typography className={classes.title} variant="h6" noWrap>
-          <Link to='/' style={{ textDecoration: 'none' , color: "white"}}><strong>ABH Stocks</strong></Link>
+          <Link to='/' style={{ textDecoration: 'none' , color: "white", padding: "10px"}}><strong>  Stock Trek</strong></Link>
           </Typography>
 
           
