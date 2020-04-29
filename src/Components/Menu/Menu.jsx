@@ -70,24 +70,28 @@ export const MenuList = ({ user }) => {
   const outList = () => {
     return (
       <div>
+      <Link to="/SignIn" style={{textDecoration: "none", color:"#4285F4"}}>
         <MenuItem onClick={handleClose}>
           {' '}
           <ListItemIcon>
             <LockOpenSharpIcon fontSize="small" style={{fill: "lightgreen"}}/>
           </ListItemIcon>
           <Typography variant="inherit">
-            <Link to="/SignIn" style={{textDecoration: "none", color:"#4285F4"}}>Sign In</Link>
+           Sign In
           </Typography>
         </MenuItem>
+        </Link>
+        <Link to="/" style={{textDecoration: "none", color:"#4285F4"}}>
         <MenuItem onClick={handleClose}>
           {' '}
           <ListItemIcon>
             <SearchIcon fontSize="small" style={{fill: "lightgreen"}}/>
           </ListItemIcon>
           <Typography variant="inherit">
-          <Link to="/" style={{textDecoration: "none", color:"#4285F4"}}>Search Stocks</Link>
+          Search Stocks
           </Typography>
         </MenuItem>
+        </Link>
       </div>
     );
   };
