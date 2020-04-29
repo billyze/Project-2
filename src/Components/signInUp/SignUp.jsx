@@ -45,8 +45,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignUp() {
-  const classes = useStyles();
+export default function SignUp({history}) {
+  
+  const userCreated = () => {
+    //Set was successfull, let user know the account was created, adnd redirect him to sign in page
+    alert('User created successfully!')
+    history.push('/Profile')
+  }
 
   //State Hook
   const [user, setUser] = useState({
@@ -55,6 +60,7 @@ export default function SignUp() {
     password: '',
     confirmPassword: '',
   });
+
 
  
 
@@ -69,19 +75,24 @@ export default function SignUp() {
       return;
     }
 
+    // Try and create User in DATABASE, check if exist first
     try {
       const { user } = await auth.createUserWithEmailAndPassword(
         email,
         password
       );
       await createUserProfileDocument(user, { displayName });
-
+    
+    // User doesn't exist, go ahead and create new one with credentials provided  
       setUser({
         displayName: '',
         email: '',
         password: '',
         confirmPassword: '',
       });
+     //Let user know action was successfull and redirect to sign in page. 
+      userCreated()
+
     } catch (error) {
       alert(error.message);
     }
@@ -95,7 +106,8 @@ export default function SignUp() {
 
    //Destructure user state so we avoid doing user.displayname, user.Email, etc...
    const { displayName, email, password, confirmPassword } = user;
-
+   const classes = useStyles();
+   
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />

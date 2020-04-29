@@ -6,6 +6,7 @@ import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import { MenuList } from '../Menu/Menu';
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -63,8 +64,22 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SearchAppBar({ user }) {
+export default function SearchAppBar({user, handleChange}) {
   const classes = useStyles();
+  const history = useHistory();
+  
+
+  const updateView =(e)=>{
+
+    handleChange(e)
+
+    if (e.target.value === ''){
+      history.push('/')
+    }else{
+      history.push('/Search')
+    }
+    
+  }
 
   return (
     <div className={classes.root}>
@@ -90,6 +105,7 @@ export default function SearchAppBar({ user }) {
                 input: classes.inputInput,
               }}
               inputProps={{ 'aria-label': 'search' }}
+              onChange={updateView}
             />
           </div>
           <MenuList user={user} />

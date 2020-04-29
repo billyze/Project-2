@@ -26,12 +26,12 @@ class Home extends Component {
         let companyNameCopy = []
         let companySymbolCopy = []
         if(e.target.value) {
-            Axios.get(`http://ticker-2e1ica8b9.now.sh/keyword/${e.target.value}`)
+            Axios.get(`https://ticker-2e1ica8b9.now.sh/keyword/${e.target.value}`)
             .then(response => {
                 response.data.map((eachName,i) => {
                     companySymbolCopy[i] = eachName.symbol
                     companyNameCopy[i] = eachName.name
-                    return
+                    
                 })
                 this.setState({
                     companyNames: companyNameCopy,
