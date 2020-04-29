@@ -1,60 +1,77 @@
+/* App.js */
+import CanvasJSReact from './canvasjs.react';
 import React, { Component } from 'react';
-import { Chart } from 'chart.js'
-
+//var CanvasJSReact = require('./canvasjs.react');
+var CanvasJS = CanvasJSReact.CanvasJS;
+var CanvasJSChart = CanvasJSReact.CanvasJSChart;
+ 
+var dataPoints =[];
 class Canvas extends Component {
-    componentDidMount() {
-        const canvas = this.refs.canvas
-        const ctx = canvas.getContext("2d")
-        const img = this.refs.image
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
-        });
-        img.onload = () => {
-          ctx.drawImage(img, 0, 0)
-          ctx.font = "40px Courier"
+ 
+    state = {
+        load: false
+    }
+
+	render() {	
+        console.log(this.props)
+		const options = {
+			theme: "light2",
+			title: {
+				text: `Stock Price of ${this.props.companyName}`
+			},
+			axisY: {
+				title: "Price in USD",
+				prefix: "$",
+				includeZero: false
+			},
+			data: [{
+				type: "line",
+				xValueFormatString: "MMM YYYY",
+				yValueFormatString: "$#,##0.00",
+				dataPoints: dataPoints
+			}]
         }
-      }
-      render() {
-        return(
-          <div>
-            <canvas ref="canvas" width={640} height={425} />
-            <img ref="image" src="https://images.dog.ceo/breeds/springer-english/n02102040_4644.jpg" style={{display:'none'}} />
-          </div>
-        )
-      }
+        console.log(dataPoints)
+		return (
+		<div>
+			<CanvasJSChart options = {options} 
+				 onRef={ref => this.chart = ref}
+			/>
+			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
+		</div>
+		);
+	}
+	
+	componentDidMount(){
+        var chart = this.chart
+        let dateStr = this.props.date[0]
+        var date = dateStr.slice(0,10)
+        for (var i = 0; i < this.props.date.length; i++) {
+            if(date === this.props.date[i].slice(0,10))
+            dataPoints.push({
+                x: new Date(this.props.date[i]),
+                y: Number(this.props.data[i])
+                // x: new Date(data[i].x),
+                // y: data[i].y
+            });
+        }
+        chart.render();
+		// fetch('https://canvasjs.com/data/gallery/react/nifty-stock-price.json')
+		// .then(function(response) {
+		// 	return response.json();
+		// })
+		// .then(function(data) {
+		// 	for (var i = 0; i < data.length; i++) {
+		// 		dataPoints.push({
+        //             // x: this.props.date[i],
+        //             // y: this.props.data[i]
+		// 			x: new Date(data[i].x),
+		// 			y: data[i].y
+		// 		});
+        //     }
+        //     chart.render();
+		// });
+	}
 }
 
 export default Canvas;

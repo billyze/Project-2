@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-// import { Switch, Route } from 'react-router-dom'
-import Gif from './Components/navbar/Gif';
 import Navbar from './Components/navbar/Navbar';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Components/home/Home';
@@ -14,8 +12,8 @@ import {
 } from './Components/firebase/firebase.utils';
 import { UserProfile } from './Components/userProfile/userProfile';
 import SearchBar from './Components/searchBar/SearchBar';
+import Canvas from './Components/canvas/Canvas'
 
-// import Canvas from './Components/Canvas'
 class App extends Component {
   /* START OF TRACK IF USER LOGGED IN OR NOT, PASS DOWN TO ALL COMPONENTS */
   state = {
@@ -72,10 +70,10 @@ class App extends Component {
       <div>
         <Navbar user={this.state.currentUser} handleChange={this.handleChange} />
         {/* This component needs to be moved, so it doesnt load in every view. */}
-        {/* <Gif /> */}
+        
         {/* <Canvas></Canvas>   */}
         {/* {this.setImage()} */}
-          
+        {/* <Canvas /> */}
         <Switch>
           <Route exact path="/" component={(props) => <Home {...props} />} />
           <Route
