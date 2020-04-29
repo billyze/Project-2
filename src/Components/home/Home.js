@@ -16,7 +16,7 @@ class Home extends Component {
         return this.state.companyNames.map((eachCompany,i) => {
             return (
                 <div key={this.state.companySymbol[i]}>
-                  <Link to={`/${this.state.companySymbol[i]}`}>{this.state.companySymbol[i]}: {eachCompany}</Link>
+                  <Link to={`/Company/${this.state.companySymbol[i]}`}>{this.state.companySymbol[i]}: {eachCompany}</Link>
                 </div>
             )
         })
@@ -49,6 +49,7 @@ class Home extends Component {
     }
 
     render() {
+        console.log(this.props)
         return (
             <div>
                 <ul>
