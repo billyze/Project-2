@@ -10,7 +10,8 @@ import LockOpenSharpIcon from '@material-ui/icons/LockOpenSharp';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import { fade, makeStyles } from '@material-ui/core/styles';
+import AccountCircleSharpIcon from '@material-ui/icons/AccountCircleSharp';
+import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   menuButton: {
@@ -29,9 +30,66 @@ export const MenuList = ({ user }) => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const logOut = () => {
+    handleClose();
+    auth.signOut();
+  };
   /*  Code to handle open/close of MENU */
 
-  console.log(user);
+  const inList = () => {
+    return (
+      <div>
+        <MenuItem onClick={handleClose}>
+          {' '}
+          <ListItemIcon>
+            <AccountCircleSharpIcon fontSize="small" />
+          </ListItemIcon>
+          <Typography variant="inherit">
+            <Link to="/Profile">Profile</Link>
+          </Typography>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          {' '}
+          <ListItemIcon>
+            <SearchIcon fontSize="small" />
+          </ListItemIcon>
+          <Typography variant="inherit">Search Stock</Typography>
+        </MenuItem>
+        <MenuItem onClick={logOut}>
+          {' '}
+          <ListItemIcon>
+            <ExitToAppSharpIcon fontSize="small" />
+          </ListItemIcon>
+          <Typography variant="inherit">Log Out</Typography>
+        </MenuItem>
+      </div>
+    );
+  };
+
+  const outList = () => {
+    return (
+      <div>
+        <MenuItem onClick={handleClose}>
+          {' '}
+          <ListItemIcon>
+            <LockOpenSharpIcon fontSize="small" />
+          </ListItemIcon>
+          <Typography variant="inherit">
+            <Link to="/SignIn">Sign In</Link>
+          </Typography>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          {' '}
+          <ListItemIcon>
+            <SearchIcon fontSize="small" />
+          </ListItemIcon>
+          <Typography variant="inherit">Search Stock</Typography>
+        </MenuItem>
+      </div>
+    );
+  };
+
   const classes = useStyles();
   return (
     <div>
@@ -54,29 +112,7 @@ export const MenuList = ({ user }) => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>
-          {' '}
-          <ListItemIcon>
-            <LockOpenSharpIcon fontSize="small" />
-          </ListItemIcon>
-          <Typography variant="inherit">
-            <Link to="/SignIn">Sign In</Link>
-          </Typography>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          {' '}
-          <ListItemIcon>
-            <SearchIcon fontSize="small" />
-          </ListItemIcon>
-          <Typography variant="inherit">Search Stock</Typography>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          {' '}
-          <ListItemIcon>
-            <ExitToAppSharpIcon fontSize="small" />
-          </ListItemIcon>
-          <Typography variant="inherit">Log Out</Typography>
-        </MenuItem>
+        {user ? inList() : outList()}
       </Menu>
     </div>
   );

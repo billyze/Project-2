@@ -8,12 +8,14 @@ import Home from './Components/home/Home';
 import Company from './Components/company/Company';
 import SignIn from './Components/signInUp/SignIn';
 import SignUp from './Components/signInUp/SignUp';
-import { auth, createUserProfileDocument } from './Components/firebase/firebase.utils';
+import {
+  auth,
+  createUserProfileDocument,
+} from './Components/firebase/firebase.utils';
 
 // import Canvas from './Components/Canvas'
 class App extends Component {
-
-/* START OF TRACK IF USER LOGGED IN OR NOT, PASS DOWN TO ALL COMPONENTS */
+  /* START OF TRACK IF USER LOGGED IN OR NOT, PASS DOWN TO ALL COMPONENTS */
   state = {
     currentUser: null,
   };
@@ -54,9 +56,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar user={this.state.currentUser} />
         {/* This component needs to be moved, so it doesnt load in every view. */}
-        <Gif />  
+        <Gif />
         {/* <Canvas></Canvas>   */}
         {/* {this.setImage()} */}
         <Switch>
@@ -68,12 +70,16 @@ class App extends Component {
           <Route
             exact
             path="/SignIn"
-            component={(props) => <SignIn {...props} user={this.state.currentUser}/>}
+            component={(props) => (
+              <SignIn {...props} user={this.state.currentUser} />
+            )}
           />
           <Route
             exact
             path="/SignUp"
-            component={(props) => <SignUp {...props} user={this.state.currentUser}/>}
+            component={(props) => (
+              <SignUp {...props} user={this.state.currentUser} />
+            )}
           />
         </Switch>
       </div>
