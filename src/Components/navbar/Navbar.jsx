@@ -86,17 +86,21 @@ export default function SearchAppBar({user, handleChange}) {
     <div className={classes.root}>
       <AppBar position="static" style={{backgroundColor: '#4285F4'}} >
         <Toolbar>
-        <Link to='/'><img
+        {/* <Link to='/'><img
             width="30px"
             src="./favicon.ico"
             alt="Logo"
           /></Link>
           <Typography className={classes.title} variant="h6" noWrap>
           <Link to='/' style={{ textDecoration: 'none' , color: "white", padding: "10px"}}><strong>  Stock Trek</strong></Link>
-          </Typography>
+          </Typography> */}
 
-          
-
+          <Link to='/'><img
+            width="130px"
+            src="https://files.slack.com/files-pri/T02CQ4EN4-F012ZBN9FJ8/stock_treck.png"
+            alt="Logo"
+          /></Link>
+          <Typography className={classes.title} variant="h6" noWrap></Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon style={{fill: "#FAFAFA"}}/>
