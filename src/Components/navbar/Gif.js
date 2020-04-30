@@ -21,7 +21,7 @@ class Gif extends Component {
 
 setImage = () => {
   if(this.state.image){
-    return <img width="100%" height="380px"  style={{backgroundColor: 'green'}} src={this.state.imageUrl} alt="Stock Market"/>
+    return <img width="100%" height="380px"   src={this.state.imageUrl} alt="Stock Market"/>
   }
 }
 

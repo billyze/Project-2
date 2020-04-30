@@ -1,6 +1,7 @@
 /* App.js */
 import CanvasJSReact from './canvasjs.react';
 import React, { Component } from 'react';
+import News from './../News/News';
 //var CanvasJSReact = require('./canvasjs.react');
 var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
@@ -36,6 +37,7 @@ class Canvas extends Component {
 			<CanvasJSChart options = {options} 
 				 onRef={ref => this.chart = ref}
 			/>
+			<News/>
 			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
 		</div>
 		);

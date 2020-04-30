@@ -35,7 +35,9 @@ class News extends Component {
     
     return (
       <div className="App">
-        <h2>Latest News on Stock Market</h2>
+        <hr/>
+        <h2 textDecoration='red'><i>Latest News on Stock Market</i></h2>
+        <hr/>
         <Grid  style={{display: "grid"}} container justify="center">
         {
             (this.state.news)
