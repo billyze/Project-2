@@ -5,11 +5,11 @@ import React, { Component } from 'react';
 var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
  
-var dataPoints =[];
 class Canvas extends Component {
  
     state = {
-        load: false
+		load: false,
+		dataPoints: []
     }
 
 	render() {	
@@ -28,10 +28,9 @@ class Canvas extends Component {
 				type: "line",
 				xValueFormatString: "MMM YYYY",
 				yValueFormatString: "$#,##0.00",
-				dataPoints: dataPoints
+				dataPoints: this.state.dataPoints
 			}]
-        }
-        console.log(dataPoints)
+		}
 		return (
 		<div>
 			<CanvasJSChart options = {options} 
@@ -48,14 +47,14 @@ class Canvas extends Component {
         var date = dateStr.slice(0,10)
         for (var i = 0; i < this.props.date.length; i++) {
             if(date === this.props.date[i].slice(0,10))
-            dataPoints.push({
+            this.state.dataPoints.push({
                 x: new Date(this.props.date[i]),
                 y: Number(this.props.data[i])
                 // x: new Date(data[i].x),
                 // y: data[i].y
             });
-        }
-        chart.render();
+		}
+		chart.render();
 		// fetch('https://canvasjs.com/data/gallery/react/nifty-stock-price.json')
 		// .then(function(response) {
 		// 	return response.json();
