@@ -8,6 +8,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Title from './Title';
+import Progress from '../progress/Progress'
 
 // Generate Stock Data
 function createData(id, symbol, name, high, low) {
@@ -60,5 +61,5 @@ export const UserProfile = ({ user, data }) => {
     );
   };
 
-  return <div>{data ? showData() : 'Loading...'}</div>;
+  return <div>{data ? showData() : (<Progress/>)}</div>;
 };

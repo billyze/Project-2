@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
-
 let api_key = "Waxy1wRfFaZ06KVdexO0B2uLgbVA01PP"
 
 class Gif extends Component {
@@ -11,7 +10,6 @@ class Gif extends Component {
       componentDidMount = () => {
         Axios.get(`https://api.giphy.com/v1/stickers/random?api_key=${api_key}&tag=Cryply&rating=G`)
         .then(response => {
-          console.log(response.data)
           this.setState({
             image: true,
             imageUrl: response.data.data.images.original.url
