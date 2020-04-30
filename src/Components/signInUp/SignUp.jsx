@@ -192,9 +192,7 @@ export default function SignUp({history}) {
           </Grid>
         </form>
       </div>
-      <Box mt={5}>
-        <Copyright />
-      </Box>
+      
     </Container>
   );
 }

@@ -158,9 +158,7 @@ export default function SignIn({ history }) {
           </Grid>
         </form>
       </div>
-      <Box mt={8}>
-        <Copyright />
-      </Box>
+      
     </Container>
   );
 }

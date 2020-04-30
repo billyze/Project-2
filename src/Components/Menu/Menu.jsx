@@ -47,23 +47,23 @@ export const MenuList = ({user}) => {
         <MenuItem onClick={handleClose}>
           {' '}
           <ListItemIcon>
-            <AccountCircleSharpIcon fontSize="small" />
+            <AccountCircleSharpIcon fontSize="small" style={{fill: "#81C784"}}/>
           </ListItemIcon>
           <Typography variant="inherit">
-            <Link to="/Profile">Profile</Link>
+            <Link to="/Profile" style={{textDecoration: "none", color:"#4285F4"}}>Profile</Link>
           </Typography>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           {' '}
           <ListItemIcon>
-            <SearchIcon fontSize="small" />
+            <SearchIcon fontSize="small" style={{fill: "#81C784"}} />
           </ListItemIcon>
           <Typography variant="inherit">Search Stock</Typography>
         </MenuItem>
         <MenuItem onClick={logOut}>
           {' '}
           <ListItemIcon>
-            <ExitToAppSharpIcon fontSize="small" />
+            <ExitToAppSharpIcon fontSize="small" style={{fill: "#81C784"}}/>
           </ListItemIcon>
           <Typography variant="inherit">Log Out</Typography>
         </MenuItem>
@@ -74,22 +74,22 @@ export const MenuList = ({user}) => {
   const outList = () => {
     return (
       <div>
-      <Link to="/SignIn" style={{textDecoration: "none", color:"#blue"}}>
+      <Link to="/SignIn" style={{textDecoration: "none", color:"#4285F4"}}>
         <MenuItem onClick={handleClose}>
           {' '}
           <ListItemIcon>
-            <LockOpenSharpIcon fontSize="small" style={{fill: "green"}}/>
+            <LockOpenSharpIcon fontSize="small" style={{fill: "#81C784"}}/>
           </ListItemIcon>
           <Typography variant="inherit">
            Sign In
           </Typography>
         </MenuItem>
         </Link>
-        <Link to="/" style={{textDecoration: "none", color:"#blue"}}>
+        <Link to="/" style={{textDecoration: "none", color:"#4285F4"}}>
         <MenuItem onClick={handleClose}>
           {' '}
           <ListItemIcon>
-            <SearchIcon fontSize="small" style={{fill: "green"}}/>
+            <SearchIcon fontSize="small" style={{fill: "#81C784"}}/>
           </ListItemIcon>
           <Typography variant="inherit">
           Search Stocks
@@ -112,7 +112,7 @@ export const MenuList = ({user}) => {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        <MenuIcon style={{fill: "black"}}/>
+        <MenuIcon style={{fill: "#FAFAFA"}}/>
       </IconButton>
 
       <Menu

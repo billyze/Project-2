@@ -14,12 +14,14 @@ import { UserProfile } from './Components/userProfile/userProfile';
 import SearchBar from './Components/searchBar/SearchBar';
 import Canvas from './Components/canvas/Canvas'
 
+
 class App extends Component {
   /* START OF TRACK IF USER LOGGED IN OR NOT, PASS DOWN TO ALL COMPONENTS */
   state = {
     currentUser: null,
     isData: false,
-    search: ''
+    isLoad: false,
+    search: '',
     
   };
 
@@ -62,10 +64,17 @@ class App extends Component {
     this.setState({search: e.target.value})  
   }
 
+  isLoad = () =>{
+    console.log('News Loaded')
+    this.setState({
+      isLoad: true
+    })
+  }
+
 
 
   render() {
-    console.log(this.state.currentUser)
+    console.log(this.state.isLoad)
     return (
       <div>
         <Navbar user={this.state.currentUser} handleChange={this.handleChange} />
@@ -75,7 +84,7 @@ class App extends Component {
         {/* {this.setImage()} */}
         {/* <Canvas /> */}
         <Switch>
-          <Route exact path="/" component={(props) => <Home {...props} />} />
+          <Route exact path="/" component={(props) => <Home {...props}  isLoad={this.isLoad}/>} />
           <Route
             path="/Company/:companySymbol"
             component={(props) => <Company {...props} />}

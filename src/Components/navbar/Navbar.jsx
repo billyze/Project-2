@@ -84,10 +84,10 @@ export default function SearchAppBar({user, handleChange}) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{backgroundColor: 'blue'}} >
+      <AppBar position="static" style={{backgroundColor: '#4285F4'}} >
         <Toolbar>
         <Link to='/'><img
-            width="130px"
+            width="30px"
             src="./favicon.ico"
             alt="Logo"
           /></Link>
@@ -99,7 +99,7 @@ export default function SearchAppBar({user, handleChange}) {
 
           <div className={classes.search}>
             <div className={classes.searchIcon}>
-              <SearchIcon style={{fill: "black"}}/>
+              <SearchIcon style={{fill: "#FAFAFA"}}/>
             </div>
             <InputBase
               placeholder="Search Stocks"
