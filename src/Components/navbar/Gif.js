@@ -9,7 +9,7 @@ class Gif extends Component {
       imageUrl: ''
     }
       componentDidMount = () => {
-        Axios.get(`https://api.giphy.com/v1/gifs/random?api_key=${api_key}&tag=stockmarket&rating=G`)
+        Axios.get(`https://api.giphy.com/v1/stickers/random?api_key=${api_key}&tag=Cryply&rating=G`)
         .then(response => {
           console.log(response.data)
           this.setState({
@@ -21,7 +21,7 @@ class Gif extends Component {
 
 setImage = () => {
   if(this.state.image){
-    return <img width="100%" height="380px" src={this.state.imageUrl} alt="Stock Market"/>
+    return <img width="100%" height="380px"  style={{backgroundColor: 'green'}} src={this.state.imageUrl} alt="Stock Market"/>
   }
 }
 

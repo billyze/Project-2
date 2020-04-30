@@ -69,22 +69,22 @@ export default function SearchAppBar({ user }) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{backgroundColor: '#4285F4'}} >
+      <AppBar position="static" style={{backgroundColor: 'blue'}} >
         <Toolbar>
         <Link to='/'><img
-            width="30px"
-            src="https://cdn.clipart.email/9e77b379d33dd56bf49e01d46f0415d7_stock-market-trading-educational-video-lessons-understanding-_300-300.png"
+            width="140px"
+            src="http://www.pngmart.com/files/10/Star-Trek-Logo-PNG-Clipart.png"
             alt="Logo"
           /></Link>
           <Typography className={classes.title} variant="h6" noWrap>
-          <Link to='/' style={{ textDecoration: 'none' , color: "white"}}><strong>ABH Stocks</strong></Link>
+          {/* <Link to='/' style={{ textDecoration: 'none' , color: "white"}}><strong></strong></Link> */}
           </Typography>
 
           
 
           <div className={classes.search}>
             <div className={classes.searchIcon}>
-              <SearchIcon style={{fill: "white"}}/>
+              <SearchIcon style={{fill: "black"}}/>
             </div>
             <InputBase
               placeholder="Search Stocks"

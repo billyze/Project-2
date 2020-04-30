@@ -70,22 +70,22 @@ export const MenuList = ({ user }) => {
   const outList = () => {
     return (
       <div>
-      <Link to="/SignIn" style={{textDecoration: "none", color:"#4285F4"}}>
+      <Link to="/SignIn" style={{textDecoration: "none", color:"#blue"}}>
         <MenuItem onClick={handleClose}>
           {' '}
           <ListItemIcon>
-            <LockOpenSharpIcon fontSize="small" style={{fill: "lightgreen"}}/>
+            <LockOpenSharpIcon fontSize="small" style={{fill: "green"}}/>
           </ListItemIcon>
           <Typography variant="inherit">
            Sign In
           </Typography>
         </MenuItem>
         </Link>
-        <Link to="/" style={{textDecoration: "none", color:"#4285F4"}}>
+        <Link to="/" style={{textDecoration: "none", color:"#blue"}}>
         <MenuItem onClick={handleClose}>
           {' '}
           <ListItemIcon>
-            <SearchIcon fontSize="small" style={{fill: "lightgreen"}}/>
+            <SearchIcon fontSize="small" style={{fill: "green"}}/>
           </ListItemIcon>
           <Typography variant="inherit">
           Search Stocks
@@ -108,7 +108,7 @@ export const MenuList = ({ user }) => {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        <MenuIcon style={{fill: "white"}}/>
+        <MenuIcon style={{fill: "black"}}/>
       </IconButton>
 
       <Menu
