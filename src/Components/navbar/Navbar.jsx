@@ -6,6 +6,7 @@ import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import { MenuList } from '../Menu/Menu';
+import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
@@ -64,20 +65,34 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SearchAppBar({ user }) {
+export default function SearchAppBar({user, handleChange}) {
   const classes = useStyles();
+  const history = useHistory();
+  
+
+  const updateView =(e)=>{
+
+    handleChange(e)
+
+    if (e.target.value === ''){
+      history.push('/')
+    }else{
+      history.push('/Search')
+    }
+    
+  }
 
   return (
     <div className={classes.root}>
       <AppBar position="static" style={{backgroundColor: 'blue'}} >
         <Toolbar>
         <Link to='/'><img
-            width="140px"
-            src="http://www.pngmart.com/files/10/Star-Trek-Logo-PNG-Clipart.png"
+            width="130px"
+            src="./favicon.ico"
             alt="Logo"
           /></Link>
           <Typography className={classes.title} variant="h6" noWrap>
-          {/* <Link to='/' style={{ textDecoration: 'none' , color: "white"}}><strong></strong></Link> */}
+          <Link to='/' style={{ textDecoration: 'none' , color: "white", padding: "10px"}}><strong>  Stock Trek</strong></Link>
           </Typography>
 
           
@@ -93,6 +108,7 @@ export default function SearchAppBar({ user }) {
                 input: classes.inputInput,
               }}
               inputProps={{ 'aria-label': 'search' }}
+              onChange={updateView}
             />
           </div>
           <MenuList user={user} />

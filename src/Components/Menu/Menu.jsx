@@ -12,6 +12,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import AccountCircleSharpIcon from '@material-ui/icons/AccountCircleSharp';
 import { makeStyles } from '@material-ui/core/styles';
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   menuButton: {
@@ -19,8 +20,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const MenuList = ({ user }) => {
+export const MenuList = ({user}) => {
+  const history = useHistory();
   /*  Code to handle open/close of MENU */
+
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
@@ -34,6 +37,7 @@ export const MenuList = ({ user }) => {
   const logOut = () => {
     handleClose();
     auth.signOut();
+    history.push("/");
   };
   /*  Code to handle open/close of MENU */
 

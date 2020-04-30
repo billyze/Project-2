@@ -10,12 +10,17 @@ import {
   auth,
   createUserProfileDocument,
 } from './Components/firebase/firebase.utils';
+import { UserProfile } from './Components/userProfile/userProfile';
+import SearchBar from './Components/searchBar/SearchBar';
+import Canvas from './Components/canvas/Canvas'
 
-// import Canvas from './Components/Canvas'
 class App extends Component {
   /* START OF TRACK IF USER LOGGED IN OR NOT, PASS DOWN TO ALL COMPONENTS */
   state = {
     currentUser: null,
+    isData: false,
+    search: ''
+    
   };
 
   //method to set session to null.
@@ -35,12 +40,13 @@ class App extends Component {
               id: snapShot.id,
               ...snapShot.data(),
             },
+            isData: true,
           });
         });
       }
       //If logged out, clean state and set user to null
       else {
-        this.setState({ currentUser: userAuth });
+        this.setState({ currentUser: userAuth, isData: false });
       }
     });
   };
@@ -50,15 +56,24 @@ class App extends Component {
     this.unsubscribeFromAuth();
   }
   /* END OF TRACKING USER STATUS*/
+/* START OF TRACK IF USER LOGGED IN OR NOT, PASS DOWN TO ALL COMPONENTS */
+
+  handleChange = (e) =>{
+    this.setState({search: e.target.value})  
+  }
+
+
 
   render() {
+    console.log(this.state.currentUser)
     return (
       <div>
-        <Navbar user={this.state.currentUser} />
+        <Navbar user={this.state.currentUser} handleChange={this.handleChange} />
         {/* This component needs to be moved, so it doesnt load in every view. */}
         
         {/* <Canvas></Canvas>   */}
         {/* {this.setImage()} */}
+        {/* <Canvas /> */}
         <Switch>
           <Route exact path="/" component={(props) => <Home {...props} />} />
           <Route
@@ -77,6 +92,20 @@ class App extends Component {
             path="/SignUp"
             component={(props) => (
               <SignUp {...props} user={this.state.currentUser} />
+            )}
+          />
+           <Route
+            exact
+            path="/Search"
+            component={(props) => (
+              <SearchBar {...props} query={this.state.search} />
+            )}
+          />
+          <Route
+            exact
+            path="/Profile"
+            component={(props) => (
+              <UserProfile {...props} user={this.state.currentUser}  data={this.state.isData}/>
             )}
           />
         </Switch>

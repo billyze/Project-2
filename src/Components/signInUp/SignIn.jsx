@@ -54,9 +54,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignIn() {
-  const classes = useStyles();
-
+export default function SignIn({ history }) {
   //State Hook
   const [user, setUser] = useState({
     email: '',
@@ -75,10 +73,21 @@ export default function SignIn() {
         email: '',
         password: '',
       });
+      console.log('after suignin');
+      history.push('/Profile');
     } catch (error) {
       alert(
         'The email or password you entered is not valid, please, try again'
       );
+    }
+  };
+
+  const authGoogle = async () => {
+    try {
+      await signInWithGoogle();
+      history.push('/Profile');
+    } catch (error) {
+      alert(error);
     }
   };
 
@@ -90,7 +99,7 @@ export default function SignIn() {
 
   //Destructure user state so we avoid doing user.displayname, user.Email, etc...
   const { email, password } = user;
-
+  const classes = useStyles();
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -138,12 +147,10 @@ export default function SignIn() {
             Sign In
           </Button>
           <Grid container justify="center">
-          <GoogleButton
-            onClick={signInWithGoogle}
-          />
+            <GoogleButton onClick={authGoogle} />
           </Grid>
           <Grid container justify="flex-end">
-            <Grid className={classes.gap} >
+            <Grid className={classes.gap}>
               <Link to="/SignUp" variant="body2">
                 {"Don't have an account? Sign Up"}
               </Link>
