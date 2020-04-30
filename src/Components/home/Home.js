@@ -54,11 +54,11 @@ class Home extends Component {
             <div>
             
             <Gif/>
-                {/* <ul>
+                <ul>
                     <label>Search</label>
                     <input name="searchValue" onChange={(e) => this.handleChange(e)}/>
                     {this.state.companyNames? this.displaySearch():('')}
-                </ul> */}
+                </ul>
                 <News/>
             </div>
         );
