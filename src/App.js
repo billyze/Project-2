@@ -12,8 +12,8 @@ import {
 } from './Components/firebase/firebase.utils';
 import { UserProfile } from './Components/userProfile/userProfile';
 import SearchBar from './Components/searchBar/SearchBar';
-import Canvas from './Components/canvas/Canvas'
-
+import Canvas from './Components/canvas/Canvas';
+import Footer from './Components/footer/Footer';
 
 class App extends Component {
   /* START OF TRACK IF USER LOGGED IN OR NOT, PASS DOWN TO ALL COMPONENTS */
@@ -22,7 +22,6 @@ class App extends Component {
     isData: false,
     isLoad: false,
     search: '',
-    
   };
 
   //method to set session to null.
@@ -58,33 +57,37 @@ class App extends Component {
     this.unsubscribeFromAuth();
   }
   /* END OF TRACKING USER STATUS*/
-/* START OF TRACK IF USER LOGGED IN OR NOT, PASS DOWN TO ALL COMPONENTS */
+  /* START OF TRACK IF USER LOGGED IN OR NOT, PASS DOWN TO ALL COMPONENTS */
 
-  handleChange = (e) =>{
-    this.setState({search: e.target.value})  
-  }
+  handleChange = (e) => {
+    this.setState({ search: e.target.value });
+  };
 
-  isLoad = () =>{
-    console.log('News Loaded')
+  isLoad = () => {
     this.setState({
-      isLoad: true
-    })
-  }
-
-
+      isLoad: true,
+    });
+  };
 
   render() {
-    console.log(this.state.isLoad)
+    console.log(this.state.isLoad);
     return (
       <div>
-        <Navbar user={this.state.currentUser} handleChange={this.handleChange} />
+        <Navbar
+          user={this.state.currentUser}
+          handleChange={this.handleChange}
+        />
         {/* This component needs to be moved, so it doesnt load in every view. */}
-        
+
         {/* <Canvas></Canvas>   */}
         {/* {this.setImage()} */}
         {/* <Canvas /> */}
         <Switch>
-          <Route exact path="/" component={(props) => <Home {...props}  isLoad={this.isLoad}/>} />
+          <Route
+            exact
+            path="/"
+            component={(props) => <Home {...props} isLoad={this.isLoad} />}
+          />
           <Route
             path="/Company/:companySymbol"
             component={(props) => <Company {...props} />}
@@ -103,7 +106,7 @@ class App extends Component {
               <SignUp {...props} user={this.state.currentUser} />
             )}
           />
-           <Route
+          <Route
             exact
             path="/Search"
             component={(props) => (
@@ -114,10 +117,15 @@ class App extends Component {
             exact
             path="/Profile"
             component={(props) => (
-              <UserProfile {...props} user={this.state.currentUser}  data={this.state.isData}/>
+              <UserProfile
+                {...props}
+                user={this.state.currentUser}
+                data={this.state.isData}
+              />
             )}
           />
         </Switch>
+        <Footer />
       </div>
     );
   }
