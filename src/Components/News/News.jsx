@@ -3,6 +3,7 @@ import Axios from 'axios';
 import NewsCard from './NewsCard.jsx';
 import Grid from '@material-ui/core/Grid';
 import Progress from '../progress/Progress'
+import newsData from './newsData.json'
 
 class News extends Component {
   state = {
@@ -10,20 +11,28 @@ class News extends Component {
     newsData: [],
   };
 
-  componentDidMount = () => {
-    Axios.get(
-      'https://stocknewsapi.com/api/v1?tickers=FB,AMZN,NFLX&items=50&token=uc622dmickzgpao5nmepbdszukmxzzk9hbxatlap'
-    ).then((response) => {
-      
-      this.setState({
-        news: true,
-        newsData: response.data,
-      });
+  componentDidMount =  () => {
+    // Axios.get(
+    //   'https://stocknewsapi.com/api/v1?tickers=FB,AMZN,NFLX&items=50&token=s1levpafpygxmnbpbjuhwfikr4tuz3d5zaqls3rk'
+    // ).then((response) => {
+    //   console.log(response)
+    //   this.setState({
+    //     news: true,
+    //     newsData: response.data,
+    //   });
+    // });
+    
+    this.setState({
+      news: true,
+      newsData: newsData,
     });
+  
   };
 
   render() {
+    
     const { data } = this.state.newsData;
+    
     return (
       <div className="App">
         <h2>Latest News on Stock Market</h2>

@@ -1,0 +1,827 @@
+{
+    "data": [
+      {
+        "news_url": "https://techcrunch.com/2020/04/30/amazon-warehouse-worker-activists-form-international-organization-to-demand-change/",
+        "image_url": "https://cdn.snapi.dev/images/v1/e/d/edcde245.jpg",
+        "title": "Amazon worker-activists form international organization to demand change in warehouses",
+        "text": "Amazon workers across the world are formalizing their activism with the creation of the Amazon Workers International. Its first action is a letter to Amazon CEO Jeff Bezos and Amazon Director of UK Customer Fulfillment Stefano Perego in which the group demands the company makes permanent certain steps Amazon has implemented amid the COVID-19 pandemic.",
+        "source_name": "TechCrunch",
+        "date": "Thu, 30 Apr 2020 09:00:29 -0400",
+        "topics": [
+          
+        ],
+        "sentiment": "Neutral",
+        "type": "Article",
+        "tickers": [
+          "AMZN"
+        ]
+      },
+      {
+        "news_url": "https://www.fool.com/investing/2020/04/30/sports-broadcasts-are-somehow-still-getting-pricie.aspx",
+        "image_url": "https://cdn.snapi.dev/images/v1/i/z/urlhttps3a2f2fgfoolcdncom2feditorial2fimages2f5694092fhand-tv-remote-sportsjpgw700opresize.jpg",
+        "title": "Sports Broadcasts Are Somehow Still Getting Pricier",
+        "text": "Absence makes the fees grow higher and that could have consequences for pay-TV and streaming industries.",
+        "source_name": "The Motley Fool",
+        "date": "Thu, 30 Apr 2020 08:15:00 -0400",
+        "topics": [
+          
+        ],
+        "sentiment": "Neutral",
+        "type": "Article",
+        "tickers": [
+          "CMCSA",
+          "DIS",
+          "DISH",
+          "FOX",
+          "FOXA",
+          "NFLX",
+          "TIVO"
+        ]
+      },
+      {
+        "news_url": "https://www.youtube.com/watch?v=2WCAb33-VGY",
+        "image_url": "https://cdn.snapi.dev/images/v1/b/i/tesla-ceo-facebook-ceo-clash-over-reopening-during-coronavirus.jpg",
+        "title": "Tesla CEO, Facebook CEO clash over reopening during coronavirus",
+        "text": "Tesla CEO Elon Musk and  Facebook CEO Mark Zuckerberg disagreed over stay-at-home orders during their earnings calls on Wednesday.",
+        "source_name": "Fox Business",
+        "date": "Thu, 30 Apr 2020 08:10:56 -0400",
+        "topics": [
+          "CEO"
+        ],
+        "sentiment": "Neutral",
+        "type": "Video",
+        "tickers": [
+          "FB",
+          "TSLA"
+        ]
+      },
+      {
+        "news_url": "https://www.investors.com/news/technology/amazon-stock-trading-quarterly-earnings-report/",
+        "image_url": "https://cdn.snapi.dev/images/v1/b/g/amazon9-2.jpg",
+        "title": "Amazon Stock Trades Near Record High With Earnings Report On Tap",
+        "text": "Amazon reports quarterly earnings late Thursday, a company uniquely positioned to perform well despite the coronavirus upheaval. The stock is currently extended from a recent buy zone.",
+        "source_name": "Investors Business Daily",
+        "date": "Thu, 30 Apr 2020 08:00:56 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "AMZN"
+        ]
+      },
+      {
+        "news_url": "https://seekingalpha.com/article/4341381-facebook-unbelievable-engagement-money-making-machine-cheap-stock",
+        "image_url": "https://cdn.snapi.dev/images/v1/b/d/fb6-2.jpg",
+        "title": "Facebook: Unbelievable Engagement, Money Making Machine, Cheap Stock",
+        "text": "Facebook: Unbelievable Engagement, Money Making Machine, Cheap Stock",
+        "source_name": "Seeking Alpha",
+        "date": "Thu, 30 Apr 2020 07:43:25 -0400",
+        "topics": [
+          
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.fool.com/investing/2020/04/30/2-stocks-that-turned-1000-into-1-million.aspx",
+        "image_url": "https://cdn.snapi.dev/images/v1/z/u/etf37-13.jpg",
+        "title": "2 Stocks That Turned $1,000 Into $1 Million",
+        "text": "Two retail giants that many people shop at every day have created life-changing wealth for investors who bought in early.",
+        "source_name": "The Motley Fool",
+        "date": "Thu, 30 Apr 2020 07:30:00 -0400",
+        "topics": [
+          
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "AMZN",
+          "WMT"
+        ]
+      },
+      {
+        "news_url": "https://www.fool.com/investing/2020/04/30/should-you-continue-paying-for-amazon-prime-during.aspx",
+        "image_url": "https://cdn.snapi.dev/images/v1/m/4/viosln2rf-1.jpg",
+        "title": "Should You Continue Paying for Amazon Prime During the Pandemic?",
+        "text": "It depends upon whether the membership loyalty program is delivering for you.",
+        "source_name": "The Motley Fool",
+        "date": "Thu, 30 Apr 2020 07:10:00 -0400",
+        "topics": [
+          
+        ],
+        "sentiment": "Neutral",
+        "type": "Article",
+        "tickers": [
+          "AMZN"
+        ]
+      },
+      {
+        "news_url": "https://investorplace.com/2020/04/the-recession-will-boost-netflix-stock-further/",
+        "image_url": "https://cdn.snapi.dev/images/v1/d/5/nt71.jpg",
+        "title": "The Recession Will Boost Netflix Stock Further",
+        "text": "Netflix will benefit from the recession, and Netflix's Q2 subscriber guidance is conservative. As a result, NFLX stock is a buy.",
+        "source_name": "InvestorPlace",
+        "date": "Thu, 30 Apr 2020 07:00:43 -0400",
+        "topics": [
+          
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "NFLX"
+        ]
+      },
+      {
+        "news_url": "https://invezz.com/news/2020/04/30/facebooks-revenue-climbs-18-in-the-first-quarter/",
+        "image_url": "https://cdn.snapi.dev/images/v1/w/o/facebook-740x416.jpg",
+        "title": "Facebook\u2019s revenue climbs 18% in the first quarter",
+        "text": "Facebook Inc. (NASDAQ: FB) released an upbeat financial report for the first quarter on Wednesday that sent its stock up roughly 10% in extended trading.",
+        "source_name": "Invezz",
+        "date": "Thu, 30 Apr 2020 06:46:41 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.reuters.com/article/us-facebook-antitrust/facebook-could-address-some-u-s-antitrust-concerns-with-new-photo-transfer-tool-idUSKBN22C1KV",
+        "image_url": "https://cdn.snapi.dev/images/v1/i/o/fb55-2.jpg",
+        "title": "Facebook could address some U.S. antitrust concerns with new photo transfer tool",
+        "text": "Facebook Inc  will allow users in the United States and Canada to transfer photos and videos to a rival tech platform for the first time - a step that could assuage antitrust concerns by giving users an option to easily leave the company's services, the social media network said on Thursday.",
+        "source_name": "Reuters",
+        "date": "Thu, 30 Apr 2020 05:49:19 -0400",
+        "topics": [
+          
+        ],
+        "sentiment": "Negative",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://investorplace.com/2020/04/amzn-stock-rising-in-the-eye-of-the-storm/",
+        "image_url": "https://cdn.snapi.dev/images/v1/q/i/83643984-s-740x416.jpg",
+        "title": "Amazon Stock is Rising in the Eye of the Storm Ahead of Thursday\u2019s Report",
+        "text": "The \"whisper number\" on Amazon earnings is 50 cents a share higher than the official expectation. Anything short of perfection could take AMZN stock down.",
+        "source_name": "InvestorPlace",
+        "date": "Thu, 30 Apr 2020 05:16:43 -0400",
+        "topics": [
+          
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "AMZN"
+        ]
+      },
+      {
+        "news_url": "https://www.benzinga.com/news/earnings/20/04/15916626/munster-says-still-neutral-on-facebooks-long-term-outlook-despite-impressive-q1-results",
+        "image_url": "https://cdn.snapi.dev/images/v1/3/j/facebook-logo-cybersecurity-data.jpg",
+        "title": "Munster Says Still 'Neutral' On Facebook's Long-Term Outlook Despite Impressive Q1 Results",
+        "text": "Loup Ventures Managing Partner Gene Munster on Wednesday said Facebook Inc.'s (NASDAQ: FB) results are impressive in the short-term, but he still doesn't see the company favorably in the long-term.",
+        "source_name": "Benzinga",
+        "date": "Thu, 30 Apr 2020 01:34:43 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Neutral",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.marketwatch.com/story/apple-amazon-and-gilead-take-anchor-leg-of-earnings-race-with-a-big-lead-2020-04-30",
+        "image_url": "https://cdn.snapi.dev/images/v1/j/q/fwf22-1.jpg",
+        "title": "Earnings Watch: Apple, Amazon and Gilead take anchor leg of earnings race with a big lead",
+        "text": "In the busiest earnings week of the season, Thursday is the biggest act.",
+        "source_name": "Market Watch",
+        "date": "Thu, 30 Apr 2020 00:45:41 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "AAPL",
+          "AMZN",
+          "GILD"
+        ]
+      },
+      {
+        "news_url": "https://seekingalpha.com/article/4341309-facebook-inc-fb-ceo-mark-zuckerberg-on-q1-2020-results-earnings-call-transcript",
+        "image_url": "https://cdn.snapi.dev/images/v1/n/z/transcript31-2.jpg",
+        "title": "Facebook, Inc. (FB) CEO Mark Zuckerberg on Q1 2020 Results - Earnings Call Transcript",
+        "text": "Facebook, Inc. (FB) CEO Mark Zuckerberg on Q1 2020 Results - Earnings Call Transcript",
+        "source_name": "Seeking Alpha",
+        "date": "Wed, 29 Apr 2020 23:56:17 -0400",
+        "topics": [
+          "CallScript"
+        ],
+        "sentiment": "Neutral",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.marketwatch.com/story/musk-vs-zuck-a-tale-of-two-ceos-acting-much-differently-during-a-pandemic-2020-04-29",
+        "image_url": "https://cdn.snapi.dev/images/v1/w/d/wdew23.jpg",
+        "title": "MarketWatch First Take: Musk vs. Zuck: A tale of two CEOs acting much differently during a pandemic",
+        "text": "The stark contrast in how Elon Musk and Mark Zuckerberg are dealing with the global pandemic was on display Wednesday, with Tesla\u2019s CEO calling the ongoing shelter-in-place orders fascist, while Facebook\u2019s CEO sounded like a realistic statesman in their conference calls with Wall Street.",
+        "source_name": "Market Watch",
+        "date": "Wed, 29 Apr 2020 22:23:36 -0400",
+        "topics": [
+          "CEO"
+        ],
+        "sentiment": "Neutral",
+        "type": "Article",
+        "tickers": [
+          "FB",
+          "TSLA"
+        ]
+      },
+      {
+        "news_url": "https://www.youtube.com/watch?v=v6eGfdyftpw",
+        "image_url": "https://cdn.snapi.dev/images/v1/2/r/urlhttps3a2f2fgfoolcdncom2feditorial2fimages2f5631972fgettyimages-1132660268gogfbjpgw700opresize.jpg",
+        "title": "Stocks Soar On Gilead Drug; Apple At Buy, Netflix Rebounds Bullishly",
+        "text": "Stocks soar on Gilead Covid drug; Apple at buy point, Netflix makes bullish move.",
+        "source_name": "Investors Business Daily",
+        "date": "Wed, 29 Apr 2020 19:59:08 -0400",
+        "topics": [
+          "tanalysis"
+        ],
+        "sentiment": "Positive",
+        "type": "Video",
+        "tickers": [
+          "AAPL",
+          "GILD",
+          "NFLX"
+        ]
+      },
+      {
+        "news_url": "https://www.youtube.com/watch?v=dXjvVCzP4jc",
+        "image_url": "https://cdn.snapi.dev/images/v1/k/g/facebooks-recovery-will-be-slow-due-to-other-business-re-opening-says-emarketer-analyst.jpg",
+        "title": "Facebook's Recovery Will be Slow Due to Other Business' Re-opening, Says eMarketer Analyst",
+        "text": "Debra Aho Williamson, eMarketer analyst, discusses Facebook earnings on \"Bloomberg Technology.",
+        "source_name": "Bloomberg Technology",
+        "date": "Wed, 29 Apr 2020 19:46:49 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Neutral",
+        "type": "Video",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.cnbc.com/2020/04/29/facebook-needs-an-encore-beyond-advertising-says-gene-munster.html",
+        "image_url": "https://cdn.snapi.dev/images/v1/l/n/104114592-gettyimages-620896858.jpg",
+        "title": "Facebook needs an 'encore' beyond advertising to make Gene Munster believe in the stock",
+        "text": "The Loup Ventures managing partner said progress on virtual reality and augmented reality would make him \"more optimistic\" around Facebook's stock.",
+        "source_name": "CNBC",
+        "date": "Wed, 29 Apr 2020 19:07:58 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Neutral",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.cnet.com/news/facebook-sees-strong-user-growth-as-coronavirus-pandemic-creates-uncertainty/",
+        "image_url": "https://cdn.snapi.dev/images/v1/h/m/fbt2-2.jpg",
+        "title": "Facebook sees strong user growth as coronavirus pandemic creates uncertainty",
+        "text": "A total of 2.6 billion people are using the social network every month, says Facebook.",
+        "source_name": "CNET",
+        "date": "Wed, 29 Apr 2020 18:15:00 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.nytimes.com/2020/04/29/technology/facebook-earnings-advertising-virus.html",
+        "image_url": "https://cdn.snapi.dev/images/v1/j/z/ze2.jpg",
+        "title": "Facebook Points to \u2018Signs of Stability\u2019 as Ad Declines Flatten",
+        "text": "The company reported rising revenue and profit in the first quarter and said it was also saving on expenses.",
+        "source_name": "NYTimes",
+        "date": "Wed, 29 Apr 2020 18:08:07 -0400",
+        "topics": [
+          "earnings",
+          "paywall"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "http://www.gurufocus.com/news/1120735/facebook-vs-tesla-follow-up",
+        "image_url": "https://cdn.snapi.dev/images/v1/9/e/ij9223f-1.jpg",
+        "title": "Facebook vs. Tesla: Follow Up",
+        "text": "Hi fellow investors,",
+        "source_name": "GuruFocus",
+        "date": "Wed, 29 Apr 2020 17:57:51 -0400",
+        "topics": [
+          
+        ],
+        "sentiment": "Neutral",
+        "type": "Article",
+        "tickers": [
+          "FB",
+          "TSLA"
+        ]
+      },
+      {
+        "news_url": "https://www.youtube.com/watch?v=_30tatOXYP8",
+        "image_url": "https://cdn.snapi.dev/images/v1/0/d/loup-ventures-gene-munster-breaks-down-facebooks-quarter.jpg",
+        "title": "Loup Ventures' Gene Munster breaks down Facebook's quarter",
+        "text": "Loup Ventures' Gene Munster breaks down the near- and long-term outlook for Facebook.",
+        "source_name": "CNBC Television",
+        "date": "Wed, 29 Apr 2020 17:56:16 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Video",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.cnn.com/2020/04/29/tech/facebook-earnings-pandemic/index.html",
+        "image_url": "https://cdn.snapi.dev/images/v1/b/s/facebook-downpngw730.jpg",
+        "title": "Facebook's business is looking resilient despite pandemic",
+        "text": "Facebook's core advertising business has been upended by the pandemic, but the company said it saw \"signs of stability\" in the first three weeks of April.",
+        "source_name": "CNN Business",
+        "date": "Wed, 29 Apr 2020 17:54:43 -0400",
+        "topics": [
+          
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.cnbc.com/2020/04/29/facebook-ceo-zuckerberg-warns-against-reopening-public-spaces-too-soon.html",
+        "image_url": "https://cdn.snapi.dev/images/v1/1/0/106393418-158180152976620200215-mzuckerberg-alone-1.jpg",
+        "title": "Zuckerberg warns against reopening public spaces too soon",
+        "text": "Facebook CEO Mark Zuckerberg warned Wednesday that reopening public spaces too soon \"almost guarantees\" continued outbreaks and longer economic outcomes.",
+        "source_name": "CNBC",
+        "date": "Wed, 29 Apr 2020 17:44:54 -0400",
+        "topics": [
+          "CEO"
+        ],
+        "sentiment": "Neutral",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.youtube.com/watch?v=1gqxY_z7ANQ",
+        "image_url": "https://cdn.snapi.dev/images/v1/w/a/facebook-reports-earnings-do-the-fm-traders-like-what-they-heard.jpg",
+        "title": "Facebook reports earnings, do the FM traders like what they heard?",
+        "text": "Facebook soars after announcing earnings.",
+        "source_name": "CNBC Television",
+        "date": "Wed, 29 Apr 2020 17:44:17 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Neutral",
+        "type": "Video",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://techcrunch.com/2020/04/29/the-quarantine-is-driving-record-usage-growth-at-facebook/",
+        "image_url": "https://cdn.snapi.dev/images/v1/4/y/fb66-1.jpg",
+        "title": "The quarantine is driving record usage growth at Facebook",
+        "text": "The quarantine lockdown is driving a record number of users to Facebook\u2019s products. On a conference call, CEO Mark Zuckerberg disclosed a number of new metrics highlighting a significant bump in Facebook usage during the broader quarantine lockdown.",
+        "source_name": "TechCrunch",
+        "date": "Wed, 29 Apr 2020 17:43:58 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "http://www.zacks.com/stock/news/899507/facebook-fb-q1-earnings-lag-estimates",
+        "image_url": "https://cdn.snapi.dev/images/v1/s/f/fb66-2.jpg",
+        "title": "Facebook (FB) Q1 Earnings Lag Estimates",
+        "text": "Facebook (FB) delivered earnings and revenue surprises of -1.16% and 2.61%, respectively, for the quarter ended March 2020. Do the numbers hold clues to what lies ahead for the stock?",
+        "source_name": "Zacks Investment Research",
+        "date": "Wed, 29 Apr 2020 17:25:08 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Negative",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://investorplace.com/2020/04/4-top-stock-trades-for-thursday-fb-amd-ba-aprn/",
+        "image_url": "https://cdn.snapi.dev/images/v1/i/h/stoc92.jpg",
+        "title": "4 Top Stock Trades for Thursday: FB, AMD, BA, APRN",
+        "text": "Facebook, Advanced Micro Devices, Boeing and Blue Apron were our top stock trades for Thursday. That said, here's a look at the charts.",
+        "source_name": "InvestorPlace",
+        "date": "Wed, 29 Apr 2020 17:23:40 -0400",
+        "topics": [
+          
+        ],
+        "sentiment": "Neutral",
+        "type": "Article",
+        "tickers": [
+          "AMD",
+          "BA",
+          "FB",
+          "APRN"
+        ]
+      },
+      {
+        "news_url": "https://www.reuters.com/article/us-facebook-results/facebook-beating-revenue-estimates-sees-signs-of-stability-in-ad-spending-idUSKBN22B34L",
+        "image_url": "https://cdn.snapi.dev/images/v1/i/x/osqxj4-0a7y-1.jpg",
+        "title": "Facebook, beating revenue estimates, sees signs of stability in ad spending",
+        "text": "Facebook Inc  beat analysts' estimates for quarterly revenue on Wednesday and said it has seen \"signs of stability\" for sales in April after a plunge in March, in yet another indication that tech giants may weather the coronavirus-induced economic collapse better than other sectors.",
+        "source_name": "Reuters",
+        "date": "Wed, 29 Apr 2020 17:20:05 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.fastcompany.com/90499025/facebook-sees-a-big-jump-in-users-during-lockdowns-but-advertising-takes-a-hit",
+        "image_url": "https://cdn.snapi.dev/images/v1/1/d/chc0cw-ghts-1.jpg",
+        "title": "Facebook sees a big jump in users during lockdowns, but advertising takes a hit",
+        "text": "Your suspicions were correct. More people are using Facebook services as coronavirus lockdowns keep us trapped indoors.",
+        "source_name": "Fast Company",
+        "date": "Wed, 29 Apr 2020 17:10:02 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.cnbc.com/2020/04/29/facebook-cfo-cautious-on-companys-ad-revenue-amid-pandemic.html",
+        "image_url": "https://cdn.snapi.dev/images/v1/f/z/fb2.jpg",
+        "title": "Facebook CFO David Wehner says ad revenue outlook 'really uncertain' amid pandemic",
+        "text": "Facebook shares jumped in after-hours trading Wednesday after the company announced mixed first-quarter results.",
+        "source_name": "CNBC",
+        "date": "Wed, 29 Apr 2020 17:06:06 -0400",
+        "topics": [
+          "earnings",
+          "CFO"
+        ],
+        "sentiment": "Negative",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.youtube.com/watch?v=key_w7MADE8",
+        "image_url": "https://cdn.snapi.dev/images/v1/4/t/facebook-cfo-we-had-a-steep-decline-in-ad-revenue-in-march.jpg",
+        "title": "Facebook CFO: 'We had a steep decline in ad revenue in March'",
+        "text": "Facebook CFO David Wehner joins \"Closing Bell\" to talk about the company's earnings and advertising revenue.",
+        "source_name": "CNBC Television",
+        "date": "Wed, 29 Apr 2020 16:55:11 -0400",
+        "topics": [
+          "earnings",
+          "CFO"
+        ],
+        "sentiment": "Neutral",
+        "type": "Video",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.theguardian.com/technology/2020/apr/29/facebook-quarterly-earnings-results",
+        "image_url": "https://cdn.snapi.dev/images/v1/n/h/fb1-6.jpg",
+        "title": "Facebook reports slowest quarterly growth since going public",
+        "text": "Company earns $4.9bn as it faces slowdown in digital advertising market amid coronavirus",
+        "source_name": "The Guardian",
+        "date": "Wed, 29 Apr 2020 16:39:52 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Negative",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.reuters.com/article/us-facebook-results/facebook-sees-signs-of-stability-in-ad-spending-idUSKBN22B34L",
+        "image_url": "https://cdn.snapi.dev/images/v1/s/p/fb4.jpg",
+        "title": "Facebook sees signs of stability in ad spending",
+        "text": "Facebook Inc  beat analysts' estimates for quarterly revenue on Wednesday, and said it has seen signs of stability in ad spending during the first three weeks of April.",
+        "source_name": "Reuters",
+        "date": "Wed, 29 Apr 2020 16:27:21 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://investorplace.com/2020/04/facebook-earnings-boost-fb-stock-up/",
+        "image_url": "https://cdn.snapi.dev/images/v1/w/c/105223282-gettyimages-953502232530x298.jpg",
+        "title": "Facebook Earnings: FB Stock Soars 10% Despite Q1 EPS Miss",
+        "text": "Facebook (FB) earnings for the social media company's first quarter of 2020 have FB stock soaring higher after-hours Wednesday.\nThe post Facebook Earnings: FB Stock Soars 10% Despite Q1 EPS Miss appeared first on InvestorPlace.",
+        "source_name": "InvestorPlace",
+        "date": "Wed, 29 Apr 2020 16:26:21 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.cnet.com/news/facebook-sees-strong-user-growth-amid-coronavirus-pandemic/",
+        "image_url": "https://cdn.snapi.dev/images/v1/u/8/ftw2.jpg",
+        "title": "Facebook sees strong user growth amid coronavirus pandemic",
+        "text": "A total of 2.6 billion people are using the social network every month, says Facebook.",
+        "source_name": "CNET",
+        "date": "Wed, 29 Apr 2020 16:26:00 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://techcrunch.com/2020/04/29/facebook-stock-spikes-despite-significant-reduction-in-demand-for-ads/",
+        "image_url": "https://cdn.snapi.dev/images/v1/k/e/f2.jpg",
+        "title": "Facebook stock spikes despite \u2018significant reduction\u2019 in demand for ads",
+        "text": "The coronavirus pandemic is significantly slowing the growth of Facebook\u2019s ads business, but investors seems pleased with the company\u2019s performance in Q1 after Facebook released its earnings report Wednesday. The company beat Wall Street expectations on revenue, sharing that they had made $17.74 billion on while follow short on earnings per share at $1.71.",
+        "source_name": "TechCrunch",
+        "date": "Wed, 29 Apr 2020 16:23:31 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://deadline.com/2020/04/facebook-tops-q1-1202921332/",
+        "image_url": "https://cdn.snapi.dev/images/v1/g/3/facebook-1084449-1920-2-0.jpg",
+        "title": "Facebook Surpasses 2.6B Users But Misses Q1 Profit Target On Pandemic Ad Slowdown",
+        "text": "Facebook topped Wall Street estimates for revenue in the first quarter with an 18% gain but missed targets for earnings per share. Total revenue came in at $17.7 billion, while earnings of $1.71 per share missed analysts\u2019 consensus by three cents. The company said its daily active users rose 11% in March compared with the",
+        "source_name": "Deadline",
+        "date": "Wed, 29 Apr 2020 16:22:19 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Negative",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.marketwatch.com/story/facebook-earnings-and-user-growth-miss-expectations-but-stock-still-spikes-2020-04-29",
+        "image_url": "https://cdn.snapi.dev/images/v1/d/r/fb64-3.jpg",
+        "title": "Facebook earnings and user growth miss expectations, but stock still spikes",
+        "text": "The advertising bug that bit Alphabet Inc. and Snap Inc. got around to Facebook Inc.",
+        "source_name": "Market Watch",
+        "date": "Wed, 29 Apr 2020 16:22:01 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.forbes.com/sites/sergeiklebnikov/2020/04/29/facebook-shares-jump-over-8-after-beating-q1-revenue-expectations/",
+        "image_url": "https://cdn.snapi.dev/images/v1/f/u/facebook-shares-jump-over-8-after-beating-q1-revenue-expectations.jpg",
+        "title": "Facebook Shares Jump Over 8% After Beating Q1 Revenue Expectations",
+        "text": "The company reported \u201cstability\u201d in ad revenue, despite a slowdown in March.",
+        "source_name": "Forbes",
+        "date": "Wed, 29 Apr 2020 16:21:38 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.benzinga.com/news/earnings/20/04/15913747/facebook-reports-q1-sales-beat-users-up-10",
+        "image_url": "https://cdn.snapi.dev/images/v1/g/6/105239873-gettyimages-962171220.jpg",
+        "title": "Facebook Reports Q1 Sales Beat, Users Up 10%",
+        "text": "Facebook Inc (NASDAQ: FB) reported quarterly earnings of $1.71 per share on Wednesday, which missed the analyst consensus estimate of $1.74.",
+        "source_name": "Benzinga",
+        "date": "Wed, 29 Apr 2020 16:20:54 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://247wallst.com/media/2020/04/29/why-facebook-earnings-are-so-great/",
+        "image_url": "https://cdn.snapi.dev/images/v1/p/k/106293222-1576170081424gettyimages-1185053406.jpeg",
+        "title": "Why Facebook Earnings Are So Great",
+        "text": "Facebook Inc. (NASDAQ: FB) released first-quarter financial results after markets closed Wednesday.",
+        "source_name": "24/7 Wall Street",
+        "date": "Wed, 29 Apr 2020 16:19:43 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.reuters.com/article/us-facebook-results/facebook-beats-quarterly-revenue-estimates-idUSKBN22B34L",
+        "image_url": "https://cdn.snapi.dev/images/v1/r/f/rfew245.jpg",
+        "title": "Facebook beats quarterly revenue estimates",
+        "text": "Facebook Inc  beat analysts' estimates for quarterly revenue on Wednesday, and said it will not provide a specific revenue forecast for the second quarter or full-year 2020.",
+        "source_name": "Reuters",
+        "date": "Wed, 29 Apr 2020 16:15:58 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.cnbc.com/2020/04/29/facebook-fb-earnings-q1-2020.html",
+        "image_url": "https://cdn.snapi.dev/images/v1/b/3/gettyimages-630348652.jpg",
+        "title": "Here's what to expect when Facebook reports earnings after the bell",
+        "text": "Facebook has seen an increase in user engagement as a result of the coronavirus, but it has also warned that the pandemic has adversely affected the company's advertising business.",
+        "source_name": "CNBC",
+        "date": "Wed, 29 Apr 2020 15:32:48 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Neutral",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://news.sky.com/story/coronavirus-facebook-warns-increased-engagement-during-lockdowns-may-not-last-11980827",
+        "image_url": "https://cdn.snapi.dev/images/v1/2/h/fbwa7.jpg",
+        "title": "Facebook warns 'increased engagement' during lockdowns may not last",
+        "text": "Facebook has reported a leap in user numbers as many of its key territories entered lockdown conditions to combat the spread of coronavirus.",
+        "source_name": "Skynews",
+        "date": "Wed, 29 Apr 2020 15:24:00 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Neutral",
+        "type": "Article",
+        "tickers": [
+          "FB"
+        ]
+      },
+      {
+        "news_url": "https://www.theguardian.com/technology/2020/apr/29/amazon-thermal-cameras-china-dahua",
+        "image_url": "https://cdn.snapi.dev/images/v1/a/m/amaz82-5.jpg",
+        "title": "Amazon buys heat-sensing cameras from blacklisted Chinese firm",
+        "text": "Cameras to check workers\u2019 temperatures amid coronavirus come from Dahua, which allegedly helped Beijing detain Muslims",
+        "source_name": "The Guardian",
+        "date": "Wed, 29 Apr 2020 15:14:50 -0400",
+        "topics": [
+          
+        ],
+        "sentiment": "Neutral",
+        "type": "Article",
+        "tickers": [
+          "AMZN"
+        ]
+      },
+      {
+        "news_url": "https://techcrunch.com/2020/04/29/amazon-to-stream-nfls-thursday-night-football-through-2022-plus-one-exclusive-game-each-season/",
+        "image_url": "https://cdn.snapi.dev/images/v1/f/o/footballpngw712.jpg",
+        "title": "Amazon to stream NFL\u2019s Thursday Night Football through 2022, plus one exclusive game each season",
+        "text": "The NFL\u2019s Thursday Night Football is returning to stream on Amazon. The companies announced today they\u2019ve again renewed their agreement which will allow Amazon Prime Video to offer a live, digital stream of Thursday Night Football to a global audience through the 2022 season.",
+        "source_name": "TechCrunch",
+        "date": "Wed, 29 Apr 2020 15:13:13 -0400",
+        "topics": [
+          
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "AMZN"
+        ]
+      },
+      {
+        "news_url": "https://www.reuters.com/article/us-amazon-stocks/amazon-is-wall-streets-biggest-winner-from-coronavirus-idUSKBN22B2ZU",
+        "image_url": "https://cdn.snapi.dev/images/v1/j/5/m35wgdvtfqe-1.jpg",
+        "title": "Amazon is Wall Street's biggest winner from coronavirus",
+        "text": "No company's stock market value has benefited more from the coronavirus pandemic than Amazon.com's.",
+        "source_name": "Reuters",
+        "date": "Wed, 29 Apr 2020 15:07:11 -0400",
+        "topics": [
+          
+        ],
+        "sentiment": "Positive",
+        "type": "Article",
+        "tickers": [
+          "AMZN"
+        ]
+      },
+      {
+        "news_url": "https://www.fool.com/investing/2020/04/29/netflix-great-q1-is-stock-too-expensive.aspx",
+        "image_url": "https://cdn.snapi.dev/images/v1/v/z/net6-6.jpg",
+        "title": "Netflix Just Had a Great Q1. Is the Stock Getting Too Expensive?",
+        "text": "The coronavirus pandemic may cause people to permanently alter their TV-watching habits.",
+        "source_name": "The Motley Fool",
+        "date": "Wed, 29 Apr 2020 13:39:04 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Neutral",
+        "type": "Article",
+        "tickers": [
+          "NFLX"
+        ]
+      },
+      {
+        "news_url": "https://www.youtube.com/watch?v=kYxofc4H6uk",
+        "image_url": "https://cdn.snapi.dev/images/v1/a/f/breaking-down-google-earnings-and-what-to-expect-from-amazon-and-apple.jpg",
+        "title": "Breaking down Google earnings and what to expect from Amazon and Apple",
+        "text": "D.A. Davidson Senior Research Analyst Tom Forte and  David Nelson, Chief Strategist of Belpointe Asset Management.",
+        "source_name": "Yahoo Finance",
+        "date": "Wed, 29 Apr 2020 12:42:21 -0400",
+        "topics": [
+          "earnings"
+        ],
+        "sentiment": "Neutral",
+        "type": "Video",
+        "tickers": [
+          "AAPL",
+          "AMZN",
+          "GOOG",
+          "GOOGL"
+        ]
+      }
+    ]
+  }
