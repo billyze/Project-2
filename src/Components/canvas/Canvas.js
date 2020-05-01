@@ -27,7 +27,7 @@ class Canvas extends Component {
 			},
 			data: [{
 				type: "line",
-				xValueFormatString: "MMM YYYY",
+				xValueFormatString: "DD MMM YY 	HH:mm",
 				yValueFormatString: "$#,##0.00",
 				dataPoints: this.state.dataPoints
 			}]
