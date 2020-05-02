@@ -10,6 +10,10 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import AddCircleOutlineSharpIcon from '@material-ui/icons/AddCircleOutlineSharp';
+import {updateTracking} from '../firebase/firebase.utils'
 
 //TO BE MOVED TO its OWN COMPONENT
 
@@ -22,14 +26,23 @@ export default class SearchBar extends Component {
 
   // for presentation only, going to be moved into its own component
   displaySearch = () => {
+    const {user} = this.props
     return (
-      <TableContainer component={Paper} styles={{margin: 10}}>
+      <TableContainer component={Paper} styles={{ margin: 10 }}>
         <Table aria-label="caption table">
           <caption>You've no idea how much time this took... </caption>
           <TableHead>
             <TableRow>
-              <TableCell><strong>Symbols</strong></TableCell>
-              <TableCell align="right"><strong>Company Name</strong></TableCell>
+              <TableCell>
+                <strong>Name</strong>
+              </TableCell>
+              {this.props.data ? (
+                <TableCell align="center">
+                  <strong>Track</strong>
+                </TableCell>
+              ) : (
+                ''
+              )}
             </TableRow>
           </TableHead>
           <TableBody>
@@ -37,14 +50,20 @@ export default class SearchBar extends Component {
               <TableRow key={this.state.companySymbol[i]}>
                 <TableCell component="th" scope="row">
                   <Link to={`/Company/${this.state.companySymbol[i]}`}>
-                    {this.state.companySymbol[i]}
+                    <Typography variant="subtitle1">
+                      {this.state.companySymbol[i]}
+                    </Typography>
+                    <Typography variant="subtitle2">{eachCompany}</Typography>
                   </Link>
                 </TableCell>
-                <TableCell align="right">
-                  <Link to={`/Company/${this.state.companySymbol[i]}`}>
-                    {eachCompany}
-                  </Link>
-                </TableCell>
+
+                {this.props.data ? (
+                  <TableCell align="center">
+                    <AddCircleOutlineSharpIcon onClick={()=>updateTracking(user, this.state.companySymbol[i])} style={{fill: "#81C784"}} />
+                  </TableCell>
+                ) : (
+                  ''
+                )}
               </TableRow>
             ))}
           </TableBody>
@@ -60,7 +79,6 @@ export default class SearchBar extends Component {
     if (e) {
       Axios.get(`https://ticker-2e1ica8b9.now.sh/keyword/${e}`).then(
         (response) => {
-          
           response.data.map((eachName, i) => {
             companySymbolCopy[i] = eachName.symbol;
             companyNameCopy[i] = eachName.name;
@@ -83,7 +101,7 @@ export default class SearchBar extends Component {
   render() {
     this.handleChange();
     return (
-      <div style={{margin: 20}}>
+      <div style={{ margin: 20 }}>
         {this.state.companyNames ? this.displaySearch() : ''}
       </div>
     );

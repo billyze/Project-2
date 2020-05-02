@@ -9,6 +9,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Title from './Title';
 import Progress from '../progress/Progress'
+import Axios from 'axios';
 
 // Generate Stock Data
 function createData(id, symbol, name, high, low) {
@@ -51,8 +52,24 @@ const showStock = () => {
   );
 };
 
+const getSymbolData = (symbol) => {
+
+  Axios.get(`https://ticker-2e1ica8b9.now.sh/keyword/${symbol}`)
+  .then(response => {
+    console.log(response)
+  })
+
+
+}
+
 export const UserProfile = ({ user, data }) => {
+  
+
   const showData = () => {
+    let userArr = user.trackStock
+  userArr.map(el => {
+    getSymbolData(el)
+  })
     return (
       <Box>
         <h3>{`Welcome, ${user.displayName}`}</h3>

@@ -70,7 +70,6 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state.isLoad);
     return (
       <div>
         <Navbar
@@ -110,7 +109,7 @@ class App extends Component {
             exact
             path="/Search"
             component={(props) => (
-              <SearchBar {...props} query={this.state.search} />
+              <SearchBar {...props} query={this.state.search} user={this.state.currentUser} data={this.state.isData}/>
             )}
           />
           <Route

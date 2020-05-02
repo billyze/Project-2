@@ -106,7 +106,7 @@ export default function SearchAppBar({user, handleChange}) {
               <SearchIcon style={{fill: "#FAFAFA"}}/>
             </div>
             <InputBase
-              placeholder="Search Stocks"
+              placeholder="Search for company or symbol"
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
