@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Box from '@material-ui/core/Box';
-import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -8,75 +7,85 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Title from './Title';
-import Progress from '../progress/Progress'
+import Progress from '../progress/Progress';
 import Axios from 'axios';
+import { Link } from 'react-router-dom';
 
 // Generate Stock Data
-function createData(id, symbol, name, high, low) {
-  return { id, symbol, name, high, low };
-}
+var stockData = [];
 
-const rows = [
-  createData(0, 'APPL', 'Apple', 100, 98),
-  createData(1, 'TSLA', 'Tesla', 750, 715),
-  createData(2, 'JNUG', 'No Idea', 50, 45),
-  createData(3, 'NYTM', 'No Ideax2', 60, 55),
-  createData(4, 'YMCM', 'Bad Bunny', 2, 1),
-];
-
-const showStock = () => {
+const showStock = (name, symbolData, symbol) => {
   return (
     <React.Fragment>
-      <Title>Stocks</Title>
-      <Table size="small">
-        <TableHead>
-          <TableRow>
-            <TableCell>Symbol</TableCell>
-            <TableCell>Name</TableCell>
-            <TableCell>Day High</TableCell>
-            <TableCell>Day Low</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.id}>
-              <TableCell>{row.symbol}</TableCell>
-              <TableCell>{row.name}</TableCell>
-              <TableCell>{row.high}</TableCell>
-              <TableCell>{row.low}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+      <div style={{ margin: '10px' }}>
+        <h3>{`Welcome, ${name}`}</h3>
+        <div style={{ margin: '10px 0 0 0' }}>
+          <Title>Stocks</Title>
+          <Table size="small">
+            <TableHead>
+              <TableRow>
+                <TableCell>Symbol</TableCell>
+                <TableCell align="right">Current Price</TableCell>
+                <TableCell align="right">Day High</TableCell>
+                <TableCell align="right">Day Low</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {symbol.map((el, i) => (
+                <TableRow key={el}>
+                  <TableCell>
+                    <Link to={`/Company/${el}`}>{el}</Link>
+                  </TableCell>
+                  <TableCell align="right">{symbolData[i].data.c}</TableCell>
+                  <TableCell align="right">{symbolData[i].data.h}</TableCell>
+                  <TableCell align="right">{symbolData[i].data.l}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+        <div style={{ margin: '20px 0 0 0' }}>
+        <Title>Curated News</Title>
+        </div>
+      </div>
     </React.Fragment>
   );
 };
 
-const getSymbolData = (symbol) => {
+const getUrlsArr = (stocks) => {
+  let url = [];
 
-  Axios.get(`https://ticker-2e1ica8b9.now.sh/keyword/${symbol}`)
-  .then(response => {
-    console.log(response)
-  })
+  stocks.map((stock) => {
+    url.push(
+      `https://finnhub.io/api/v1/quote?symbol=${stock}&token=bqmsdk7rh5re7283gko0`
+    );
+  });
 
-
-}
+  return url;
+};
 
 export const UserProfile = ({ user, data }) => {
-  
+  const [loaded, setLoaded] = useState(false);
 
-  const showData = () => {
-    let userArr = user.trackStock
-  userArr.map(el => {
-    getSymbolData(el)
-  })
-    return (
-      <Box>
-        <h3>{`Welcome, ${user.displayName}`}</h3>
-        {showStock()}
-      </Box>
+  if (data) {
+    let urls = getUrlsArr(user.trackStock);
+
+    Axios.all(urls.map((l) => Axios.get(l))).then(
+      Axios.spread(function (...res) {
+        // all requests are now complete
+        stockData.push(res);
+        setLoaded(true);
+      })
     );
-  };
+  }
 
-  return <div>{data ? showData() : (<Progress/>)}</div>;
+  return (
+    <div>
+      {stockData.length > 0 ? (
+        showStock(user.displayName, stockData[0], user.trackStock)
+      ) : (
+        <Progress />
+      )}
+    </div>
+  );
 };
