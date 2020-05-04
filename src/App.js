@@ -12,8 +12,9 @@ import {
 } from './Components/firebase/firebase.utils';
 import { UserProfile } from './Components/userProfile/userProfile';
 import SearchBar from './Components/searchBar/SearchBar';
-import Canvas from './Components/canvas/Canvas';
+// import Canvas from './Components/canvas/Canvas';
 import Footer from './Components/footer/Footer';
+
 
 
 class App extends Component {
