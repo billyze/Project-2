@@ -10,10 +10,11 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import AddCircleOutlineSharpIcon from '@material-ui/icons/AddCircleOutlineSharp';
-import {updateTracking} from '../firebase/firebase.utils'
+import HighlightOffRoundedIcon from '@material-ui/icons/HighlightOffRounded';
+import { updateTracking, deleteTracking } from '../firebase/firebase.utils';
+import './SearchBar.css'
 
 //TO BE MOVED TO its OWN COMPONENT
 
@@ -24,9 +25,37 @@ export default class SearchBar extends Component {
     loadComplete: false,
   };
 
+  displayTracking = (user, symbol) => {
+
+    console.log(user.trackStock.indexOf(symbol)!==-1)
+
+    if (user.trackStock.indexOf(symbol)!==-1) {
+      return (
+        <TableCell align="center">
+          <HighlightOffRoundedIcon
+            onClick={() => deleteTracking(user, symbol)}
+            style={{ fill: 'red' }}
+            className='track'
+          />
+        </TableCell>
+      );
+    }else{
+        return (
+          <TableCell align="center">
+            <AddCircleOutlineSharpIcon
+              onClick={() => updateTracking(user, symbol)}
+              style={{ fill: '#81C784' }}
+              className='track'
+            />
+          </TableCell>
+        );
+      
+    }
+  };
+
   // for presentation only, going to be moved into its own component
   displaySearch = () => {
-    const {user} = this.props
+    const { user } = this.props;
     return (
       <TableContainer component={Paper} styles={{ margin: 10 }}>
         <Table aria-label="caption table">
@@ -57,13 +86,12 @@ export default class SearchBar extends Component {
                   </Link>
                 </TableCell>
 
-                {this.props.data ? (
-                  <TableCell align="center">
-                    <AddCircleOutlineSharpIcon onClick={()=>updateTracking(user, this.state.companySymbol[i])} style={{fill: "#81C784"}} />
-                  </TableCell>
-                ) : (
-                  ''
-                )}
+                {this.props.data
+                  ? this.displayTracking(
+                      user,
+                      this.state.companySymbol[i]
+                    )
+                  : ''}
               </TableRow>
             ))}
           </TableBody>

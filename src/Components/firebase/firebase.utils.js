@@ -57,6 +57,21 @@ export const updateTracking = async (user, item) => {
   
 }
 
+export const deleteTracking = async (user, item) => {
+
+  const {id} = user
+  let stockArr = await firestore.collection('users').doc(id)
+
+  try {
+    stockArr.update({
+      trackStock: firebase.firestore.FieldValue.arrayRemove(item)
+  });
+  }catch (error){
+    console.log('Error deleting stock', error)
+  }
+  
+}
+
 firebase.initializeApp(config);
 
 export const auth = firebase.auth();
