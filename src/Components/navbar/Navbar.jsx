@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
-import AddCircleOutlineSharpIcon from '@material-ui/icons/AddCircleOutlineSharp';
+import InvertColorsIcon from '@material-ui/icons/InvertColors'
 import { MenuList } from '../Menu/Menu';
 import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
@@ -86,7 +86,8 @@ export default function SearchAppBar({user, handleChange, theme}) {
   return (
     <div className={classes.root} >
       <AppBar position="static" style={{backgroundColor: '#4285F4'}} >
-        <Toolbar id="navBar">
+        
+        <Toolbar id="navBar" style={{paddingLeft:"9px", paddingRight:"9px"}}>
         {/* <Link to='/'><img
             width="30px"
             src="./favicon.ico"
@@ -97,17 +98,17 @@ export default function SearchAppBar({user, handleChange, theme}) {
           </Typography> */}
 
           <Link to='/'><img
-            width="130px"
+            width="100px"
             src="./StockTreck.png"
             alt="Logo"
           /></Link>
           <Typography className={classes.title} variant="h6" noWrap></Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
-              <SearchIcon style={{fill: "#FAFAFA"}}/>
+              <SearchIcon style={{fill: "#FAFAFA"}} />
             </div>
             <InputBase
-              placeholder="Search for company or symbol"
+              placeholder="Search Stocks"
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
@@ -116,9 +117,12 @@ export default function SearchAppBar({user, handleChange, theme}) {
               onChange={updateView}
             />
           </div>
+          <InvertColorsIcon onClick={() => theme()} style={{marginRight:"10px"}}   className='track' />
           <MenuList user={user} />
         </Toolbar>
       </AppBar>
     </div>
   );
 }
+
+

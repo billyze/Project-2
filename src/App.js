@@ -14,7 +14,10 @@ import { UserProfile } from './Components/userProfile/userProfile';
 import SearchBar from './Components/searchBar/SearchBar';
 // import Canvas from './Components/canvas/Canvas';
 import Footer from './Components/footer/Footer';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+
+
 
 class App extends Component {
   /* START OF TRACK IF USER LOGGED IN OR NOT, PASS DOWN TO ALL COMPONENTS */
@@ -39,7 +42,7 @@ class App extends Component {
   });
 
   theme = () => {
-
+console.log('run')
     this.setState({
       theme: !this.state.theme
     })
@@ -120,6 +123,8 @@ class App extends Component {
     });
   };
 
+
+
   render() {
     return (
       <ThemeProvider
@@ -131,11 +136,6 @@ class App extends Component {
             handleChange={this.handleChange}
             theme={this.theme}
           />
-          {/* This component needs to be moved, so it doesnt load in every view. */}
-
-          {/* <Canvas></Canvas>   */}
-          {/* {this.setImage()} */}
-          {/* <Canvas /> */}
           <Switch>
             <Route
               exact
