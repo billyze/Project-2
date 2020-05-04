@@ -15,8 +15,10 @@ import SearchBar from './Components/searchBar/SearchBar';
 import Canvas from './Components/canvas/Canvas';
 import Footer from './Components/footer/Footer';
 
+
 class App extends Component {
   /* START OF TRACK IF USER LOGGED IN OR NOT, PASS DOWN TO ALL COMPONENTS */
+  
   state = {
     currentUser: null,
     isData: false,
@@ -71,6 +73,7 @@ class App extends Component {
 
   render() {
     return (
+      
       <div>
         <Navbar
           user={this.state.currentUser}
@@ -126,6 +129,7 @@ class App extends Component {
         </Switch>
         <Footer />
       </div>
+     
     );
   }
 }
