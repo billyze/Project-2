@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
+import InvertColorsIcon from '@material-ui/icons/InvertColors'
 import { MenuList } from '../Menu/Menu';
 import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
@@ -85,7 +86,7 @@ export default function SearchAppBar({user, handleChange}) {
   return (
     <div className={classes.root}>
       <AppBar position="static" style={{backgroundColor: '#4285F4'}} >
-        <Toolbar>
+        <Toolbar style={{paddingLeft:"9px", paddingRight:"9px"}}>
         {/* <Link to='/'><img
             width="30px"
             src="./favicon.ico"
@@ -96,7 +97,7 @@ export default function SearchAppBar({user, handleChange}) {
           </Typography> */}
 
           <Link to='/'><img
-            width="130px"
+            width="100px"
             src="./StockTreck.png"
             alt="Logo"
           /></Link>
@@ -106,7 +107,7 @@ export default function SearchAppBar({user, handleChange}) {
               <SearchIcon style={{fill: "#FAFAFA"}}/>
             </div>
             <InputBase
-              placeholder="Search for company or symbol"
+              placeholder="Search Stocks"
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
@@ -115,6 +116,7 @@ export default function SearchAppBar({user, handleChange}) {
               onChange={updateView}
             />
           </div>
+          <InvertColorsIcon style={{marginRight:"10px"}}/>
           <MenuList user={user} />
         </Toolbar>
       </AppBar>

@@ -14,6 +14,8 @@ import { UserProfile } from './Components/userProfile/userProfile';
 import SearchBar from './Components/searchBar/SearchBar';
 // import Canvas from './Components/canvas/Canvas';
 import Footer from './Components/footer/Footer';
+import Paper from '@material-ui/core/Paper';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 
 
 
@@ -72,10 +74,19 @@ class App extends Component {
     });
   };
 
+  theme =  () => {
+    createMuiTheme({
+    palette: {
+      type: "dark",
+    },
+  });
+}
+
   render() {
     return (
       
       <div>
+      <ThemeProvider theme={this.theme()}>
         <Navbar
           user={this.state.currentUser}
           handleChange={this.handleChange}
@@ -129,6 +140,7 @@ class App extends Component {
           />
         </Switch>
         <Footer />
+        </ThemeProvider>
       </div>
      
     );
