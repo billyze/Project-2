@@ -14,17 +14,65 @@ import { UserProfile } from './Components/userProfile/userProfile';
 import SearchBar from './Components/searchBar/SearchBar';
 // import Canvas from './Components/canvas/Canvas';
 import Footer from './Components/footer/Footer';
-
-
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 class App extends Component {
   /* START OF TRACK IF USER LOGGED IN OR NOT, PASS DOWN TO ALL COMPONENTS */
-  
   state = {
     currentUser: null,
     isData: false,
     isLoad: false,
+    theme: false,
     search: '',
+  };
+
+  darkTheme = createMuiTheme({
+    palette: {
+      type: 'dark',
+    },
+  });
+
+  lightTheme = createMuiTheme({
+    palette: {
+      type: 'light',
+    },
+  });
+
+  theme = () => {
+
+    this.setState({
+      theme: !this.state.theme
+    })
+    let body = document.getElementsByTagName('body')[0];
+    let nav = document.getElementById('navBar');
+    var style = document.createElement('style');
+
+    if (!this.state.theme) {
+      body.classList.add('darkTheme');
+      nav.classList.add('darkTheme');
+      style.innerHTML = `
+  a {
+  color: white;
+  }
+  body{
+    color: #fff
+  }
+  `;
+      document.head.appendChild(style);
+    } else {
+      body.classList.remove('darkTheme');
+      nav.classList.remove('darkTheme');
+      style.innerHTML = `
+  a {
+  color: black;
+  }
+
+  body{
+    color: #000
+  }
+  `;
+      document.head.appendChild(style);
+    }
   };
 
   //method to set session to null.
@@ -74,63 +122,71 @@ class App extends Component {
 
   render() {
     return (
-      
-      <div>
-        <Navbar
-          user={this.state.currentUser}
-          handleChange={this.handleChange}
-        />
-        {/* This component needs to be moved, so it doesnt load in every view. */}
+      <ThemeProvider
+        theme={this.state.theme ? this.darkTheme : this.lightTheme}
+      >
+        <div>
+          <Navbar
+            user={this.state.currentUser}
+            handleChange={this.handleChange}
+            theme={this.theme}
+          />
+          {/* This component needs to be moved, so it doesnt load in every view. */}
 
-        {/* <Canvas></Canvas>   */}
-        {/* {this.setImage()} */}
-        {/* <Canvas /> */}
-        <Switch>
-          <Route
-            exact
-            path="/"
-            component={(props) => <Home {...props} isLoad={this.isLoad} />}
-          />
-          <Route
-            path="/Company/:companySymbol"
-            component={(props) => <Company {...props} />}
-          />
-          <Route
-            exact
-            path="/SignIn"
-            component={(props) => (
-              <SignIn {...props} user={this.state.currentUser} />
-            )}
-          />
-          <Route
-            exact
-            path="/SignUp"
-            component={(props) => (
-              <SignUp {...props} user={this.state.currentUser} />
-            )}
-          />
-          <Route
-            exact
-            path="/Search"
-            component={(props) => (
-              <SearchBar {...props} query={this.state.search} user={this.state.currentUser} data={this.state.isData}/>
-            )}
-          />
-          <Route
-            exact
-            path="/Profile"
-            component={(props) => (
-              <UserProfile
-                {...props}
-                user={this.state.currentUser}
-                data={this.state.isData}
-              />
-            )}
-          />
-        </Switch>
-        <Footer />
-      </div>
-     
+          {/* <Canvas></Canvas>   */}
+          {/* {this.setImage()} */}
+          {/* <Canvas /> */}
+          <Switch>
+            <Route
+              exact
+              path="/"
+              component={(props) => <Home {...props} isLoad={this.isLoad} />}
+            />
+            <Route
+              path="/Company/:companySymbol"
+              component={(props) => <Company {...props} />}
+            />
+            <Route
+              exact
+              path="/SignIn"
+              component={(props) => (
+                <SignIn {...props} user={this.state.currentUser} />
+              )}
+            />
+            <Route
+              exact
+              path="/SignUp"
+              component={(props) => (
+                <SignUp {...props} user={this.state.currentUser} />
+              )}
+            />
+            <Route
+              exact
+              path="/Search"
+              component={(props) => (
+                <SearchBar
+                  {...props}
+                  query={this.state.search}
+                  user={this.state.currentUser}
+                  data={this.state.isData}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/Profile"
+              component={(props) => (
+                <UserProfile
+                  {...props}
+                  user={this.state.currentUser}
+                  data={this.state.isData}
+                />
+              )}
+            />
+          </Switch>
+          <Footer />
+        </div>
+      </ThemeProvider>
     );
   }
 }

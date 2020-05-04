@@ -94,7 +94,7 @@ class Canvas extends Component {
     const { data } = this.state.newsData;
     console.log(this.state.dataPoints);
     return (
-      <div >
+      <div  style={{ margin: '10px' }}>
         {this.state.load ? this.loadCanvas() : ''}
         <CanvasJSChart options={options} onRef={(ref) => (this.chart = ref)} />
         {(this.state.dataPoints = [])}

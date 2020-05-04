@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
+import AddCircleOutlineSharpIcon from '@material-ui/icons/AddCircleOutlineSharp';
 import { MenuList } from '../Menu/Menu';
 import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
@@ -65,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SearchAppBar({user, handleChange}) {
+export default function SearchAppBar({user, handleChange, theme}) {
   const classes = useStyles();
   const history = useHistory();
   
@@ -83,9 +84,9 @@ export default function SearchAppBar({user, handleChange}) {
   }
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} >
       <AppBar position="static" style={{backgroundColor: '#4285F4'}} >
-        <Toolbar>
+        <Toolbar id="navBar">
         {/* <Link to='/'><img
             width="30px"
             src="./favicon.ico"

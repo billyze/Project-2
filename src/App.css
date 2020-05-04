@@ -3,6 +3,12 @@ a {
   
 }
 
+.darkTheme {
+  color: #fff !important;
+    background-color: #424242 !important;
+}
+
+
 .App {
   text-align: center;
 }
