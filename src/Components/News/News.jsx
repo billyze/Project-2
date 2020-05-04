@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Axios from 'axios';
+// import Axios from 'axios';
 import NewsCard from './NewsCard.jsx';
 import Grid from '@material-ui/core/Grid';
 import Progress from '../progress/Progress'
@@ -36,7 +36,7 @@ class News extends Component {
     return (
       <div className="App">
         <hr/>
-        <h2 textDecoration='red'><i>Latest News on Stock Market</i></h2>
+        <h2><i>Latest News on Stock Market</i></h2>
         <hr/>
         <Grid  style={{display: "grid"}} container justify="center">
         {
@@ -49,6 +49,7 @@ class News extends Component {
                     text={el.text}
                     newsUrl={el.news_url}
                     stocks={el.tickers}
+                    sentiment={el.sentiment}
                     />
                 }))
             )

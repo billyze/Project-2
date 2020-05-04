@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Axios from 'axios'
+// import Axios from 'axios'
 import Canvas from '../canvas/Canvas'
 
-let api_key = "9W5UPEGYZVUVW53C"
+// let api_key = "9W5UPEGYZVUVW53C"
 
 class Company extends Component {
     
@@ -11,7 +11,8 @@ class Company extends Component {
         Interval: '5min',
         load: false,
         data: [],
-        date: []
+        date: [],
+        currentDate: ''
     }
 
     componentDidMount = () => {
@@ -40,7 +41,7 @@ class Company extends Component {
         console.log(x)
         return (
             <div>
-                <Canvas companyName={this.props.match.params.companySymbol} />
+                <Canvas currentDate={this.state.currentDate} data={this.state.data} date={this.state.date} companyName={this.props.match.params.companySymbol} />
             </div>
         )
     }

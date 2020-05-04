@@ -1,10 +1,13 @@
 /* App.js */
 import CanvasJSReact from './canvasjs.react';
 import React, { Component } from 'react';
-import News from './../News/News';
+import NewsCard from '../News/NewsCard'
+import Grid from '@material-ui/core/Grid';
+import Progress from '../progress/Progress'
+import newsData from '../News/newsData.json'
 import Axios from 'axios'
 //var CanvasJSReact = require('./canvasjs.react');
-var CanvasJS = CanvasJSReact.CanvasJS;
+// var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 let api_key = "9W5UPEGYZVUVW53C"
@@ -14,6 +17,8 @@ class Canvas extends Component {
     state = {
 		load: false,
 		dataPoints: [],
+		news: false,
+		newsData: [],
 		date: [],
 		data: [],
 		symbol: '',
@@ -62,7 +67,9 @@ class Canvas extends Component {
 			},
 		},
 		currentInterval: 'fiveMin'
-    }
+	}
+	
+
 
 	render() {	
 		const options = {
@@ -82,9 +89,11 @@ class Canvas extends Component {
 				dataPoints: this.state.dataPoints
 			}]
 		}
+
+		const { data } = this.state.newsData;
 		console.log(this.state.dataPoints)
 		return (
-		<div style={{ margin: '10px' }}>
+		<div className= 'App'>
 			{this.state.load? (this.loadCanvas()) : ('')}
 			<CanvasJSChart options = {options} 
 				 onRef={ref => this.chart = ref}
@@ -98,14 +107,38 @@ class Canvas extends Component {
 				<option value="daily">Daily</option>
 				<option value="weekly">Weekly</option>
 			</select>
-			</div>
-			{/* <News/> */}
+			<h2><i>Latest News on {this.props.companyName}</i></h2>
+			<Grid  style={{display: "grid"}} container justify="center">
+        {
+            (this.state.news)
+            ? (
+                (data.map((el) => {
+					if(el.tickers.includes(this.props.companyName)){
+                    return <NewsCard
+                    title={el.title}
+                    image={el.image_url}
+                    text={el.text}
+                    newsUrl={el.news_url}
+                    stocks={el.tickers}
+                    sentiment={el.sentiment}
+                    />
+					}
+                }))
+            )
+            :(<Progress/>)
+        }
+        </Grid>
 			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
+		</div>
 		</div>
 		);
 	}
 	
 	componentDidMount(){
+		this.setState({
+			news: true,
+			newsData: newsData,
+		  });
 		let dataCopy = []
         let dateCopy = []
         let index = 0
