@@ -96,8 +96,8 @@ export default function SearchAppBar({user, handleChange}) {
           </Typography> */}
 
           <Link to='/'><img
-            width="130px"
-            src="https://files.slack.com/files-pri/T02CQ4EN4-F012ZBN9FJ8/stock_treck.png"
+            width="10px"
+            src="./StockTreck.png"
             alt="Logo"
           /></Link>
           <Typography className={classes.title} variant="h6" noWrap></Typography>
@@ -106,7 +106,7 @@ export default function SearchAppBar({user, handleChange}) {
               <SearchIcon style={{fill: "#FAFAFA"}}/>
             </div>
             <InputBase
-              placeholder="Search Stocks"
+              placeholder="Search for company or symbol"
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,

@@ -23,12 +23,14 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!snapShot.exists) {
     const { displayName, email } = userAuth;
     const createdAt = new Date();
+    const trackStock = []
 
     try {
       await userRef.set({
         displayName,
         email,
         createdAt,
+        trackStock,
         ...additionalData,
       });
     } catch (error) {
@@ -37,6 +39,23 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   }
   return userRef;
 };
+
+
+
+export const updateTracking = async (user, item) => {
+
+  const {id} = user
+  let stockArr = await firestore.collection('users').doc(id)
+
+  try {
+    stockArr.update({
+      trackStock: firebase.firestore.FieldValue.arrayUnion(item)
+  });
+  }catch (error){
+    console.log('Error adding stock', error)
+  }
+  
+}
 
 firebase.initializeApp(config);
 

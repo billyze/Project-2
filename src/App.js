@@ -15,8 +15,10 @@ import SearchBar from './Components/searchBar/SearchBar';
 import Canvas from './Components/canvas/Canvas';
 import Footer from './Components/footer/Footer';
 
+
 class App extends Component {
   /* START OF TRACK IF USER LOGGED IN OR NOT, PASS DOWN TO ALL COMPONENTS */
+  
   state = {
     currentUser: null,
     isData: false,
@@ -70,8 +72,8 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state.isLoad);
     return (
+      
       <div>
         <Navbar
           user={this.state.currentUser}
@@ -110,7 +112,7 @@ class App extends Component {
             exact
             path="/Search"
             component={(props) => (
-              <SearchBar {...props} query={this.state.search} />
+              <SearchBar {...props} query={this.state.search} user={this.state.currentUser} data={this.state.isData}/>
             )}
           />
           <Route
@@ -127,6 +129,7 @@ class App extends Component {
         </Switch>
         <Footer />
       </div>
+     
     );
   }
 }
