@@ -93,7 +93,7 @@ class Canvas extends Component {
 		const { data } = this.state.newsData;
 		console.log(this.state.dataPoints)
 		return (
-		<div>
+		<div className= 'App'>
 			{this.state.load? (this.loadCanvas()) : ('')}
 			<CanvasJSChart options = {options} 
 				 onRef={ref => this.chart = ref}
@@ -105,6 +105,7 @@ class Canvas extends Component {
 				<option value="daily">Daily</option>
 				<option value="weekly">Weekly</option>
 			</select>
+			<h2><i>Latest News on {this.props.companyName}</i></h2>
 			<Grid  style={{display: "grid"}} container justify="center">
         {
             (this.state.news)
