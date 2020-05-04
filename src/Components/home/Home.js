@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Axios from 'axios';
 import Gif from './../navbar/Gif';
 // let api_key = ["9W5UPEGYZVUVW53C" , "BR5V2PTA5QED77EH", "ERJDBELY01OD8EQ1", "13QPI9QXTR3WJ1GZ", "5C5GVF78LE67D39B" ]
 import News from './../News/News';
-import Progress from '../progress/Progress'
 class Home extends Component {
 
   render() {

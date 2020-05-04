@@ -219,7 +219,7 @@ class Canvas extends Component {
           index++;
         }
       } else {
-        for (var key in response.data[
+        for ( key in response.data[
           `Time Series (${this.state.intervalSetting[value].typeLower})`
         ]) {
           dateCopy[index] = key;

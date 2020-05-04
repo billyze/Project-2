@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Box from '@material-ui/core/Box';
-import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -9,6 +7,8 @@ import TableRow from '@material-ui/core/TableRow';
 import Title from './Title';
 import Progress from '../progress/Progress';
 import Axios from 'axios';
+import Grid from '@material-ui/core/Grid';
+import ProfileNewsCard from './ProfileNewsCard'
 import { Link } from 'react-router-dom';
 
 // Generate Stock Data
@@ -18,7 +18,7 @@ const showStock = (name, symbolData, symbol) => {
   return (
     <React.Fragment>
       <div style={{ margin: '10px' }}>
-        <h3>{`Welcome, ${name}`}</h3>
+        <h3 style={{ "textAlign": 'center' }} >{`Welcome, ${name}`}</h3>
         <div style={{ margin: '10px 0 0 0' }}>
           <Title>Stocks</Title>
           <Table size="small">
@@ -46,6 +46,12 @@ const showStock = (name, symbolData, symbol) => {
         </div>
         <div style={{ margin: '20px 0 0 0' }}>
           <Title>Curated News</Title>
+          <Grid  style={{display: "grid"}} container justify="center">
+                <ProfileNewsCard 
+                stocks={symbol}
+                />
+
+          </Grid>
         </div>
       </div>
     </React.Fragment>
