@@ -40,7 +40,7 @@ class Company extends Component {
         let x = new Date(this.state.date[0])
         console.log(x)
         return (
-            <div>
+            <div style={{ "marginTop": '10px' }}>
                 <Canvas currentDate={this.state.currentDate} data={this.state.data} date={this.state.date} companyName={this.props.match.params.companySymbol} />
             </div>
         )
