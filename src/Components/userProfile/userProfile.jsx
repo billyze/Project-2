@@ -45,7 +45,7 @@ const showStock = (name, symbolData, symbol) => {
           </Table>
         </div>
         <div style={{ margin: '20px 0 0 0' }}>
-        <Title>Curated News</Title>
+          <Title>Curated News</Title>
         </div>
       </div>
     </React.Fragment>

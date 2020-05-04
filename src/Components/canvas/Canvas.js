@@ -84,19 +84,22 @@ class Canvas extends Component {
 		}
 		console.log(this.state.dataPoints)
 		return (
-		<div>
+		<div style={{ margin: '10px' }}>
 			{this.state.load? (this.loadCanvas()) : ('')}
 			<CanvasJSChart options = {options} 
 				 onRef={ref => this.chart = ref}
 			/>
 			{this.state.dataPoints = []}
-			<select id="intervals" onChange={(e) =>this.newInterval(e.target.value)}>
+			<div style={{ "marginTop": '20px' }}>
+			<h4 style={{ "margin": '10px' }}>Set interval:</h4>
+			<select style={{ "marginLeft": '20px' }} id="intervals" onChange={(e) =>this.newInterval(e.target.value)}>
 				<option value="fiveMin">5 Min</option>
 				<option value="sixtyMin">Hourly</option>
 				<option value="daily">Daily</option>
 				<option value="weekly">Weekly</option>
 			</select>
-			<News/>
+			</div>
+			{/* <News/> */}
 			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
 		</div>
 		);
