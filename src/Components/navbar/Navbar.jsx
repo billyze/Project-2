@@ -96,7 +96,7 @@ export default function SearchAppBar({user, handleChange}) {
           </Typography> */}
 
           <Link to='/'><img
-            width="30px"
+            width="130px"
             src="./StockTreck.png"
             alt="Logo"
           /></Link>
