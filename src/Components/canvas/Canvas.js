@@ -1,17 +1,25 @@
 /* App.js */
 import CanvasJSReact from './canvasjs.react';
 import React, { Component } from 'react';
-import News from './../News/News';
+import NewsCard from '../News/NewsCard'
+import Grid from '@material-ui/core/Grid';
+import Progress from '../progress/Progress'
+import newsData from '../News/newsData.json'
+
 //var CanvasJSReact = require('./canvasjs.react');
-var CanvasJS = CanvasJSReact.CanvasJS;
+// var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
  
 class Canvas extends Component {
  
     state = {
 		load: false,
-		dataPoints: []
-    }
+		dataPoints: [],
+		news: false,
+		newsData: []
+	}
+	
+
 
 	render() {	
         console.log(this.props)
@@ -32,18 +40,44 @@ class Canvas extends Component {
 				dataPoints: this.state.dataPoints
 			}]
 		}
+
+		const { data } = this.state.newsData;
 		return (
 		<div>
 			<CanvasJSChart options = {options} 
 				 onRef={ref => this.chart = ref}
 			/>
-			<News/>
+
+<Grid  style={{display: "grid"}} container justify="center">
+        {
+            (this.state.news)
+            ? (
+                (data.map((el) => {
+					if(el.tickers.includes(this.props.companyName)){
+                    return <NewsCard
+                    title={el.title}
+                    image={el.image_url}
+                    text={el.text}
+                    newsUrl={el.news_url}
+                    stocks={el.tickers}
+                    sentiment={el.sentiment}
+                    />
+					}
+                }))
+            )
+            :(<Progress/>)
+        }
+        </Grid>
 			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
 		</div>
 		);
 	}
 	
 	componentDidMount(){
+		this.setState({
+			news: true,
+			newsData: newsData,
+		  });
         var chart = this.chart
         let dateStr = this.props.date[0]
         var date = dateStr.slice(0,10)

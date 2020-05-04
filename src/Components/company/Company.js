@@ -11,7 +11,8 @@ class Company extends Component {
         Interval: '5min',
         load: false,
         data: [],
-        date: []
+        date: [],
+        currentDate: ''
     }
 
     componentDidMount = () => {
@@ -30,7 +31,8 @@ class Company extends Component {
                 Symbol: response.data['Meta Data']['2. Symbol'],
                 load: true,
                 data: dataCopy,
-                date: dateCopy
+                date: dateCopy,
+                currentDate: new Date(dateCopy[0])
             })
           })
         }
@@ -43,7 +45,7 @@ class Company extends Component {
                 {this.state.Symbol}: {this.state.data[0]}
                 {console.log(this.state.data)}
                 {console.log(this.state.date)}
-                <Canvas data={this.state.data} date={this.state.date} companyName={this.props.match.params.companySymbol} />
+                <Canvas currentDate={this.state.currentDate} data={this.state.data} date={this.state.date} companyName={this.props.match.params.companySymbol} />
             </div>
         )
     }

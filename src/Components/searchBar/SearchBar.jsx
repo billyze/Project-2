@@ -60,7 +60,6 @@ export default class SearchBar extends Component {
     if (e) {
       Axios.get(`https://ticker-2e1ica8b9.now.sh/keyword/${e}`).then(
         (response) => {
-          
           response.data.map((eachName, i) => {
             companySymbolCopy[i] = eachName.symbol;
             companyNameCopy[i] = eachName.name;
