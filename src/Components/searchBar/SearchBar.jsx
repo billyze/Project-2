@@ -100,34 +100,37 @@ export default class SearchBar extends Component {
     );
   };
   // for presentation only, going to be moved into its own component
-  handleChange = () => {
+  componentDidMount = () => {
+    console.log(this.props)
     let e = this.props.query;
-    let companyNameCopy = [];
-    let companySymbolCopy = [];
-    if (e) {
-      Axios.get(`https://ticker-2e1ica8b9.now.sh/keyword/${e}`).then(
-        (response) => {
-          response.data.map((eachName, i) => {
-            companySymbolCopy[i] = eachName.symbol;
-            companyNameCopy[i] = eachName.name;
-          });
-          this.setState({
-            companyNames: companyNameCopy,
-            companySymbol: companySymbolCopy,
-            loadComplete: true,
-          });
-        }
-      );
-    } else {
-      this.setState({
-        companyNames: [],
-        companySymbol: [],
-      });
+    if(e)
+    {
+      let companyNameCopy = [];
+      let companySymbolCopy = [];
+      if (e) {
+        Axios.get(`https://ticker-2e1ica8b9.now.sh/keyword/${e}`).then(
+          (response) => {
+            response.data.map((eachName, i) => {
+              companySymbolCopy[i] = eachName.symbol;
+              companyNameCopy[i] = eachName.name;
+            });
+            this.setState({
+              companyNames: companyNameCopy,
+              companySymbol: companySymbolCopy,
+              loadComplete: true,
+            });
+          }
+        );
+      } else {
+        this.setState({
+          companyNames: [],
+          companySymbol: [],
+        });
+      }
     }
   };
 
   render() {
-    this.handleChange();
     return (
       <div style={{ margin: 20 }}>
         {this.state.companyNames ? this.displaySearch() : ''}

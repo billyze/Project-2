@@ -116,10 +116,15 @@ console.log('run')
   /* START OF TRACK IF USER LOGGED IN OR NOT, PASS DOWN TO ALL COMPONENTS */
 
   handleChange = (e) => {
-    this.setState({ search: e.target.value });
+    if(e.target.value !== this.state.seach)
+    {
+      console.log('hello')
+      this.setState({ search: e.target.value });
+    }
   };
 
   isLoad = () => {
+    console.log('hello')
     this.setState({
       isLoad: true,
     });
