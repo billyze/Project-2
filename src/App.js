@@ -27,6 +27,7 @@ class App extends Component {
     isLoad: false,
     theme: false,
     search: '',
+    testing: false,
   };
 
   darkTheme = createMuiTheme({
@@ -77,6 +78,7 @@ console.log('run')
       document.head.appendChild(style);
     }
   };
+  //testing
 
   //method to set session to null.
   unsubscribeFromAuth = null;
