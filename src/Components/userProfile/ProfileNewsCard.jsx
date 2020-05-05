@@ -37,7 +37,7 @@ export class ProfileNewsCard extends Component {
       <div>
         <Grid style={{ display: 'grid' }} container justify="center">
           {this.state.news ? (
-            <List className="root">
+            <List>
               {data.map((el, i) => {
                 if (el.tickers.includes(stocks[i])) {
                   return <ProfileNews key={i} newsArt={el} />;

@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SearchAppBar({user, handleChange}) {
+export default function SearchAppBar({user, handleChange, theme}) {
   const classes = useStyles();
   const history = useHistory();
   
@@ -84,9 +84,10 @@ export default function SearchAppBar({user, handleChange}) {
   }
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} >
       <AppBar position="static" style={{backgroundColor: '#4285F4'}} >
-        <Toolbar style={{paddingLeft:"9px", paddingRight:"9px"}}>
+        
+        <Toolbar id="navBar" style={{paddingLeft:"9px", paddingRight:"9px"}}>
         {/* <Link to='/'><img
             width="30px"
             src="./favicon.ico"
@@ -104,7 +105,7 @@ export default function SearchAppBar({user, handleChange}) {
           <Typography className={classes.title} variant="h6" noWrap></Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
-              <SearchIcon style={{fill: "#FAFAFA"}}/>
+              <SearchIcon style={{fill: "#FAFAFA"}} />
             </div>
             <InputBase
               placeholder="Search Stocks"
@@ -116,10 +117,12 @@ export default function SearchAppBar({user, handleChange}) {
               onChange={updateView}
             />
           </div>
-          <InvertColorsIcon style={{marginRight:"10px"}}/>
+          <InvertColorsIcon onClick={() => theme()} style={{marginRight:"10px"}}   className='track' />
           <MenuList user={user} />
         </Toolbar>
       </AppBar>
     </div>
   );
 }
+
+
