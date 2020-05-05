@@ -85,11 +85,15 @@ class App extends Component {
     return (
       
       <div>
-      <ThemeProvider theme={this.theme()}>
-        <Navbar
-          user={this.state.currentUser}
-          handleChange={this.handleChange}
-        />
+<ThemeProvider
+        theme={this.state.theme ? this.darkTheme : this.lightTheme}
+      >
+        <div>
+          <Navbar
+            user={this.state.currentUser}
+            handleChange={this.handleChange}
+            theme={this.theme}
+          />
         {/* This component needs to be moved, so it doesnt load in every view. */}
 
         {/* <Canvas></Canvas>   */}
