@@ -116,13 +116,13 @@ console.log('run')
   handleChange = (e) => {
     if(e.target.value !== this.state.seach)
     {
-      console.log('hello')
+      
       this.setState({ search: e.target.value });
     }
   };
 
   isLoad = () => {
-    console.log('hello')
+    
     this.setState({
       isLoad: true,
     });

@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Progress from '../progress/Progress';
 import newsData from '../News/newsData.json';
 import { ProfileNews } from './ProfileNews';
-import './userProfile.css'
+import './userProfile.css';
 
 export class ProfileNewsCard extends Component {
   state = {
@@ -29,6 +29,19 @@ export class ProfileNewsCard extends Component {
     });
   };
 
+  checkNewsStock = (tickers, stock, articule) => {
+    let x;
+    let index = Math.random();
+
+    stock.map((el) => {
+      if (tickers.includes(el)) {
+        x = <ProfileNews key={index} newsArt={articule} />;
+      }
+    });
+
+    return x;
+  };
+
   render() {
     const { data } = this.state.newsData;
     const { stocks } = this.props;
@@ -38,10 +51,8 @@ export class ProfileNewsCard extends Component {
         <Grid style={{ display: 'grid' }} container justify="center">
           {this.state.news ? (
             <List>
-              {data.map((el, i) => {
-                if (el.tickers.includes(stocks[i])) {
-                  return <ProfileNews key={i} newsArt={el} />;
-                }
+              {data.map((el) => {
+                return this.checkNewsStock(el.tickers, stocks, el);
               })}
             </List>
           ) : (

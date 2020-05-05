@@ -3,6 +3,10 @@
     background-color: #424242 !important;
 }
 
-a {
-    color: #fff;
+.bold {
+    font-weight: bold !important;
+}
+
+.MuiTableCell-sizeSmall {
+    padding: 6px 19px 6px 16px !important;
 }

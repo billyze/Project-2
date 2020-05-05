@@ -8,8 +8,9 @@ import Title from './Title';
 import Progress from '../progress/Progress';
 import Axios from 'axios';
 import Grid from '@material-ui/core/Grid';
-import ProfileNewsCard from './ProfileNewsCard'
+import ProfileNewsCard from './ProfileNewsCard';
 import { Link } from 'react-router-dom';
+import './userProfile.css';
 
 // Generate Stock Data
 var stockData = [];
@@ -18,22 +19,28 @@ const showStock = (name, symbolData, symbol) => {
   return (
     <React.Fragment>
       <div style={{ margin: '10px' }}>
-        <h3 style={{ "textAlign": 'center' }} >{`Welcome, ${name}`}</h3>
+        <h3 style={{ textAlign: 'center' }}>{`Welcome, ${name}`}</h3>
         <div style={{ margin: '10px 0 0 0' }}>
           <Title>Stocks</Title>
           <Table size="small">
             <TableHead>
               <TableRow>
-                <TableCell>Symbol</TableCell>
-                <TableCell align="right">Current Price</TableCell>
-                <TableCell align="right">Day High</TableCell>
-                <TableCell align="right">Day Low</TableCell>
+                <TableCell className="bold">Symbol</TableCell>
+                <TableCell className="bold" align="right">
+                  Current Price
+                </TableCell>
+                <TableCell className="bold" align="right">
+                  Day High
+                </TableCell>
+                <TableCell className="bold" align="right">
+                  Day Low
+                </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
               {symbol.map((el, i) => (
                 <TableRow key={el}>
-                  <TableCell>
+                  <TableCell className="bold">
                     <Link to={`/Company/${el}`}>{el}</Link>
                   </TableCell>
                   <TableCell align="right">{symbolData[i].data.c}</TableCell>
@@ -46,11 +53,8 @@ const showStock = (name, symbolData, symbol) => {
         </div>
         <div style={{ margin: '20px 0 0 0' }}>
           <Title>Curated News</Title>
-          <Grid  style={{display: "grid"}} container justify="center">
-                <ProfileNewsCard 
-                stocks={symbol}
-                />
-
+          <Grid style={{ display: 'grid' }} container justify="center">
+            <ProfileNewsCard stocks={symbol} />
           </Grid>
         </div>
       </div>

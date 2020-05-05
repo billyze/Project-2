@@ -13,62 +13,62 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     maxWidth: 650,
-  margin:15
+    margin: 15,
   },
   media: {
-    height: 140,
+    height: 220,
   },
-  textLeft:{
-      textAlign: "left",
-      marginLeft: 9,
-  }
+  textLeft: {
+    textAlign: 'left',
+    marginLeft: 9,
+    fontWeight: 'bold',
+  },
 });
 
-export default function NewsCard({image, title, text, newsUrl, stocks, sentiment}) {
+export default function NewsCard({ image, title, newsUrl, stocks, sentiment }) {
   const classes = useStyles();
 
-
-
   return (
-      
-
-    <Card key={title} className={classes.root} elevation={3} style={{backgroundColor: sentiment==="Neutral" ? "#6FAEED":sentiment==="Negative" ? "#ED6F6F":sentiment==="Positive" ? "#60F0A3":"#6FAEED"}}>
+    <Card
+      key={title}
+      className={classes.root}
+      elevation={3}
+      style={{
+        backgroundColor:
+          sentiment === 'Neutral'
+            ? '#6FAEED'
+            : sentiment === 'Negative'
+            ? '#ED6F6F'
+            : sentiment === 'Positive'
+            ? '#60F0A3'
+            : '#6FAEED',
+      }}
+    >
       <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={image}
-          title={title}
-        />
+        <CardMedia className={classes.media} image={image} title={title} />
         <CardContent>
           <Typography gutterBottom variant="h6" component="h2">
             {title}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {text}
-          </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions className={classes.textLeft}>
-      <Typography  variant="body2" color="textSecondary" component="p">
-            Related Stocks: {
-                stocks.map(el=> ` ${el}`)
-            }
-          </Typography>
+        <Typography variant="body2" color="textSecondary" component="p">
+          <strong>Related Stocks:</strong> {stocks.map((el) => ` ${el}`)}
+        </Typography>
       </CardActions>
       <CardActions className={classes.textLeft}>
-      <Typography variant="body2" color="textSecondary" component="p">
-            Sentiment: {sentiment}
-          </Typography>
+        <Typography variant="body2" color="textSecondary" component="p">
+          <strong>Sentiment:</strong> {sentiment}
+        </Typography>
       </CardActions>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          <a href={newsUrl} target="_blank" rel="noopener noreferrer">Learn More</a>
+          <a href={newsUrl} target="_blank" rel="noopener noreferrer">
+            Learn More
+          </a>
         </Button>
       </CardActions>
     </Card>
-      
   );
 }

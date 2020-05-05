@@ -12,6 +12,11 @@ const useStyles = makeStyles((theme) => ({
   inline: {
     display: 'inline',
   },
+  img: {
+    width: 60,
+    height: 60,
+    marginRight: 10,
+  },
 }));
 
 const goUrl = (url) => window.open(url);
@@ -23,8 +28,8 @@ export function ProfileNews({ newsArt }) {
   return (
     <React.Fragment>
       <ListItem button alignItems="flex-start" onClick={() => goUrl(newsArt.news_url)} >
-        <ListItemAvatar>
-          <Avatar alt="Remy Sharp" src={newsArt.image_url} />
+        <ListItemAvatar >
+          <Avatar className={classes.img} alt="Remy Sharp" src={newsArt.image_url} />
         </ListItemAvatar>
         <ListItemText
           primary={newsArt.title}

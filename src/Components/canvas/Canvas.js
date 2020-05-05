@@ -68,6 +68,10 @@ class Canvas extends Component {
     currentInterval: 'fiveMin',
   };
 
+  updateState = () => {
+    this.state.dataPoints = []
+  }
+
   render() {
     const options = {
       theme: 'light2',
@@ -92,12 +96,12 @@ class Canvas extends Component {
     };
 
     const { data } = this.state.newsData;
-    console.log(this.state.dataPoints);
+    
     return (
       <div  style={{ margin: '10px' }}>
         {this.state.load ? this.loadCanvas() : ''}
         <CanvasJSChart options={options} onRef={(ref) => (this.chart = ref)} />
-        {(this.state.dataPoints = [])}
+        {this.updateState()}
         <div style={{ marginTop: '20px' }}>
           <h4 style={{ margin: '10px' }}>Set interval:</h4>
           <select

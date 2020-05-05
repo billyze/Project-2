@@ -42,11 +42,11 @@ class News extends Component {
         {
             (this.state.news)
             ? (
-                (data.splice(1, 6).map((el) => {
+                (data.splice(1, 6).map((el, i) => {
                     return <NewsCard
+                    key={i}
                     title={el.title}
                     image={el.image_url}
-                    text={el.text}
                     newsUrl={el.news_url}
                     stocks={el.tickers}
                     sentiment={el.sentiment}

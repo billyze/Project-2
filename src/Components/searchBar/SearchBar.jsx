@@ -13,7 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import AddCircleOutlineSharpIcon from '@material-ui/icons/AddCircleOutlineSharp';
 import HighlightOffRoundedIcon from '@material-ui/icons/HighlightOffRounded';
 import { updateTracking, deleteTracking } from '../firebase/firebase.utils';
-import './SearchBar.css'
+import './SearchBar.css';
 
 //TO BE MOVED TO its OWN COMPONENT
 
@@ -25,30 +25,26 @@ export default class SearchBar extends Component {
   };
 
   displayTracking = (user, symbol) => {
-
-    console.log(user.trackStock.indexOf(symbol)!==-1)
-
-    if (user.trackStock.indexOf(symbol)!==-1) {
+    if (user.trackStock.indexOf(symbol) !== -1) {
       return (
         <TableCell align="center">
           <HighlightOffRoundedIcon
             onClick={() => deleteTracking(user, symbol)}
             style={{ fill: 'red' }}
-            className='track'
+            className="track"
           />
         </TableCell>
       );
-    }else{
-        return (
-          <TableCell align="center">
-            <AddCircleOutlineSharpIcon
-              onClick={() => updateTracking(user, symbol)}
-              style={{ fill: '#81C784' }}
-              className='track'
-            />
-          </TableCell>
-        );
-      
+    } else {
+      return (
+        <TableCell align="center">
+          <AddCircleOutlineSharpIcon
+            onClick={() => updateTracking(user, symbol)}
+            style={{ fill: '#81C784' }}
+            className="track"
+          />
+        </TableCell>
+      );
     }
   };
 
@@ -86,10 +82,7 @@ export default class SearchBar extends Component {
                 </TableCell>
 
                 {this.props.data
-                  ? this.displayTracking(
-                      user,
-                      this.state.companySymbol[i]
-                    )
+                  ? this.displayTracking(user, this.state.companySymbol[i])
                   : ''}
               </TableRow>
             ))}
@@ -100,10 +93,8 @@ export default class SearchBar extends Component {
   };
   // for presentation only, going to be moved into its own component
   componentDidMount = () => {
-    console.log(this.props)
     let e = this.props.query;
-    if(e)
-    {
+    if (e) {
       let companyNameCopy = [];
       let companySymbolCopy = [];
       if (e) {
