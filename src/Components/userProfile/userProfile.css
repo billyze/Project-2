@@ -1,5 +1,8 @@
-.root {
-    width: 100%;
-    
-    background-color: #fff;
+.darkTheme {
+    color: #fff !important;
+    background-color: #424242 !important;
+}
+
+a {
+    color: #fff;
 }
