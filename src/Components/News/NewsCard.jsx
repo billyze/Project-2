@@ -32,7 +32,7 @@ export default function NewsCard({image, title, text, newsUrl, stocks, sentiment
   return (
       
 
-    <Card className={classes.root} elevation={3} style={{backgroundColor: sentiment==="Neutral" ? "#6FAEED":sentiment==="Negative" ? "#ED6F6F":sentiment==="Positive" ? "#60F0A3":"#6FAEED"}}>
+    <Card key={title} className={classes.root} elevation={3} style={{backgroundColor: sentiment==="Neutral" ? "#6FAEED":sentiment==="Negative" ? "#ED6F6F":sentiment==="Positive" ? "#60F0A3":"#6FAEED"}}>
       <CardActionArea>
         <CardMedia
           className={classes.media}

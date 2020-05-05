@@ -44,15 +44,17 @@ export const MenuList = ({user}) => {
   const inList = () => {
     return (
       <div>
+      <Link to="/Profile" style={{textDecoration: "none", color:"#4285F4"}}>
         <MenuItem onClick={handleClose}>
           {' '}
           <ListItemIcon>
             <AccountCircleSharpIcon fontSize="small" style={{fill: "#81C784"}}/>
           </ListItemIcon>
           <Typography variant="inherit">
-            <Link to="/Profile" style={{textDecoration: "none", color:"#4285F4"}}>Profile</Link>
+            Profile
           </Typography>
         </MenuItem>
+        </Link>
         <MenuItem onClick={handleClose}>
           {' '}
           <ListItemIcon>
