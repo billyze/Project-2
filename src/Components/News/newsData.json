@@ -1,6 +1,282 @@
 {
   "data": [
     {
+      "news_url": "https://www.fool.com/investing/2020/05/06/3-stocks-you-can-buy-and-hold-forever.aspx",
+      "image_url": "https://cdn.snapi.dev/images/v1/m/j/urlhttps3a2f2fgfoolcdncom2feditorial2fimages2f5706902fgettyimages-473300496jpgw700opresize.jpg",
+      "title": "3 Stocks You Can Buy and Hold Forever",
+      "text": "These companies offer stable businesses and long-term value.",
+      "source_name": "The Motley Fool",
+      "date": "Wed, 06 May 2020 10:15:00 -0400",
+      "topics": [
+        
+      ],
+      "sentiment": "Neutral",
+      "type": "Article",
+      "tickers": [
+        "AMZN",
+        "COST",
+        "TGT",
+        "WMT"
+      ]
+    },
+    {
+      "news_url": "https://www.cnet.com/news/googles-charitable-arm-ups-coronavirus-relief-to-100-million/",
+      "image_url": "https://cdn.snapi.dev/images/v1/z/p/google-logo-5.jpg",
+      "title": "Google's charitable arm ups coronavirus relief to $100 million",
+      "text": "The money will go to areas like distance learning and health and science.",
+      "source_name": "CNET",
+      "date": "Wed, 06 May 2020 09:39:29 -0400",
+      "topics": [
+        
+      ],
+      "sentiment": "Neutral",
+      "type": "Article",
+      "tickers": [
+        "GOOG",
+        "GOOGL"
+      ]
+    },
+    {
+      "news_url": "https://techcrunch.com/2020/05/06/alphabets-loon-partners-with-att-to-extend-coverage-globally-in-case-of-disasters/",
+      "image_url": "https://cdn.snapi.dev/images/v1/1/p/1pewebzqe6kevykgcnbfnpa.jpeg",
+      "title": "Alphabet\u2019s Loon partners with AT&T to extend coverage globally in case of disasters",
+      "text": "Alphabet-owned Loon, the company focused on providing connectivity via high-altitude, stratosphere skimming balloons that can act as on-demand, deployable cell towers, has signed a new agreement with AT&T. This partnership will help Loon ensure it\u2019s in a much better position to address any potential need for disaster response cellular network coverage, thanks to AT&T and [\u2026]",
+      "source_name": "TechCrunch",
+      "date": "Wed, 06 May 2020 09:00:11 -0400",
+      "topics": [
+        
+      ],
+      "sentiment": "Positive",
+      "type": "Article",
+      "tickers": [
+        "GOOG",
+        "GOOGL",
+        "T"
+      ]
+    },
+    {
+      "news_url": "https://www.fool.com/investing/2020/05/06/3-top-cloud-computing-stocks-to-buy-in-may.aspx",
+      "image_url": "https://cdn.snapi.dev/images/v1/1/e/urlhttps3a2f2fgfoolcdncom2feditorial2fimages2f5715002fgettyimages-1145589623jpgw700opresize.jpg",
+      "title": "3 Top Cloud Computing Stocks to Buy in May",
+      "text": "These major players are dominating the cloud field.",
+      "source_name": "The Motley Fool",
+      "date": "Wed, 06 May 2020 09:00:00 -0400",
+      "topics": [
+        
+      ],
+      "sentiment": "Positive",
+      "type": "Article",
+      "tickers": [
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "MSFT"
+      ]
+    },
+    {
+      "news_url": "https://investorplace.com/2020/05/10-best-high-growth-stocks-for-young-investors/",
+      "image_url": "https://cdn.snapi.dev/images/v1/g/k/netflix-nflx-walt-disney-dis-and-facebook-fb-boeing-ba-top-trending-stocks-this-week.jpg",
+      "title": "10 Best High-Growth Stocks to Buy for Young Investors",
+      "text": "Young investors can leverage their extra time to bet on high-growth stocks that are likely to jump on developing trends.\r\nThe post 10 Best High-Growth Stocks to Buy for Young Investors appeared first on InvestorPlace.",
+      "source_name": "InvestorPlace",
+      "date": "Wed, 06 May 2020 08:59:01 -0400",
+      "topics": [
+        
+      ],
+      "sentiment": "Positive",
+      "type": "Article",
+      "tickers": [
+        "AMZN",
+        "CGC",
+        "CTRL",
+        "CVNA",
+        "KGC",
+        "SHRMF",
+        "SQ",
+        "TNET",
+        "TTD",
+        "VYGR"
+      ]
+    },
+    {
+      "news_url": "https://investorplace.com/2020/05/the-8-best-cash-cow-stocks-to-buy-for-stable-returns/",
+      "image_url": "https://cdn.snapi.dev/images/v1/z/t/bank48.jpg",
+      "title": "The 8 Best Cash Cow Stocks to Buy for Stable Returns",
+      "text": "While it\u2019s tempting to pile your money into high-flying investments, cash-rich companies are the best stocks to buy in unpredictable markets.\r\nThe post The 8 Best Cash Cow Stocks to Buy for Stable Returns appeared first on InvestorPlace.",
+      "source_name": "InvestorPlace",
+      "date": "Wed, 06 May 2020 08:13:00 -0400",
+      "topics": [
+        
+      ],
+      "sentiment": "Positive",
+      "type": "Article",
+      "tickers": [
+        "AFL",
+        "ATVI",
+        "BCE",
+        "GILD",
+        "GOOG",
+        "GOOGL",
+        "MCD",
+        "PAYX",
+        "PM"
+      ]
+    },
+    {
+      "news_url": "https://techcrunch.com/2020/05/06/facebook-discover-connectivity-free-basics-initiative/",
+      "image_url": "https://cdn.snapi.dev/images/v1/f/a/facebook-discoverjpgw711.jpg",
+      "title": "Discover is Facebook\u2019s new effort to help people access any website in text format",
+      "text": "Facebook has a new connectivity program called Discover to help those who can\u2019t afford to get online access information on the web. The service, available through mobile web and Android app, allows users to visit any website in text format (no video, images, audio and other elements that eat up large amounts of data) and [\u2026]",
+      "source_name": "TechCrunch",
+      "date": "Wed, 06 May 2020 07:53:13 -0400",
+      "topics": [
+        "product"
+      ],
+      "sentiment": "Neutral",
+      "type": "Article",
+      "tickers": [
+        "FB"
+      ]
+    },
+    {
+      "news_url": "https://investorplace.com/2020/05/bezos-long-view-amazon-stock-buy-dip/",
+      "image_url": "https://cdn.snapi.dev/images/v1/s/v/amawf-1.jpg",
+      "title": "Bezos\u2019 Long View Makes Amazon Stock a Buy on the Dip",
+      "text": "Amazon is plowing all its coming cash flow into protecting its operations from COVID-19. Its long-term growth story remains intact\nThe post Bezos\u2019 Long View Makes Amazon Stock a Buy on the Dip appeared first on InvestorPlace.",
+      "source_name": "InvestorPlace",
+      "date": "Wed, 06 May 2020 06:45:10 -0400",
+      "topics": [
+        
+      ],
+      "sentiment": "Positive",
+      "type": "Article",
+      "tickers": [
+        "AMZN"
+      ]
+    },
+    {
+      "news_url": "https://www.fool.com/investing/2020/05/06/3-artificial-intelligence-stocks-to-buy-in-may.aspx",
+      "image_url": "https://cdn.snapi.dev/images/v1/i/t/fwf22-2.jpg",
+      "title": "3 Artificial Intelligence Stocks to Buy in May",
+      "text": "COVID-19 may cause a slowdown, but artificial intelligence technology marches on.",
+      "source_name": "The Motley Fool",
+      "date": "Wed, 06 May 2020 06:45:00 -0400",
+      "topics": [
+        
+      ],
+      "sentiment": "Positive",
+      "type": "Article",
+      "tickers": [
+        "AMD",
+        "GOOG",
+        "GOOGL",
+        "AMZN"
+      ]
+    },
+    {
+      "news_url": "https://www.cnbc.com/2020/05/06/digital-tax-trump-could-unite-eu-around-the-policy-lawmaker-says.html",
+      "image_url": "https://cdn.snapi.dev/images/v1/1/0/105359961-1532771045283gettyimages-988165418.jpg",
+      "title": "Trump's hostility toward a digital tax could unite Europe to implement one, lawmaker says",
+      "text": "Disagreements with U.S. President Donald Trump could drive Europe to step up levies on companies like Google and Facebook, a lawmaker told CNBC.",
+      "source_name": "CNBC",
+      "date": "Wed, 06 May 2020 02:27:22 -0400",
+      "topics": [
+        
+      ],
+      "sentiment": "Neutral",
+      "type": "Article",
+      "tickers": [
+        "FB",
+        "GOOG",
+        "GOOGL"
+      ]
+    },
+    {
+      "news_url": "https://www.youtube.com/watch?v=pV4ECELQdtA",
+      "image_url": "https://cdn.snapi.dev/images/v1/m/q/these-rival-companies-are-working-together-to-combat-coronavirus.jpg",
+      "title": "These rival companies are working together to combat coronavirus",
+      "text": "The fight against the coronavirus pandemic has led to rival companies such as Google and Apple and Pfizer and BioNTech to work together, FOX Business\u2019 Jackie DeAngelis reports.",
+      "source_name": "Fox Business",
+      "date": "Tue, 05 May 2020 22:00:36 -0400",
+      "topics": [
+        
+      ],
+      "sentiment": "Positive",
+      "type": "Video",
+      "tickers": [
+        "AAPL",
+        "GOOG",
+        "GOOGL",
+        "PFE"
+      ]
+    },
+    {
+      "news_url": "https://www.cnet.com/news/amazon-warehouse-worker-in-ny-dies-of-covid-19/",
+      "image_url": "https://cdn.snapi.dev/images/v1/e/d/eddce233.jpg",
+      "title": "Amazon warehouse worker in New York dies of COVID-19",
+      "text": "At least five Amazon employees have died from the disease, according to news reports.",
+      "source_name": "CNET",
+      "date": "Tue, 05 May 2020 20:14:00 -0400",
+      "topics": [
+        
+      ],
+      "sentiment": "Negative",
+      "type": "Article",
+      "tickers": [
+        "AMZN"
+      ]
+    },
+    {
+      "news_url": "https://www.geekwire.com/2020/ex-amazon-employee-sues-wrongful-termination-claims-coronavirus-whistleblowing-led-firing/",
+      "image_url": "https://cdn.snapi.dev/images/v1/a/m/am2-16.jpg",
+      "title": "Ex-Amazon employee sues for wrongful termination, claims coronavirus whistleblowing led to firing",
+      "text": "A former Amazon employee is suing the company, claiming she was wrongfully terminated after taking time off to recover from COVID-19-like symptoms and sounding the alarm about safety concerns inside the warehouse where she worked.",
+      "source_name": "GeekWire",
+      "date": "Tue, 05 May 2020 20:03:17 -0400",
+      "topics": [
+        
+      ],
+      "sentiment": "Negative",
+      "type": "Article",
+      "tickers": [
+        "AMZN"
+      ]
+    },
+    {
+      "news_url": "https://techcrunch.com/2020/05/05/a-worker-at-amazons-new-york-city-fulfillment-center-is-dead-from-covid-19/",
+      "image_url": "https://cdn.snapi.dev/images/v1/e/d/eddew223.jpg",
+      "title": "A worker at Amazon\u2019s New York City fulfillment center is dead from COVID-19",
+      "text": "Earlier this week, Amazon informed staff members at its Staten Island fulfillment center that a worker had died from COVID-19. The news was first noted by The Verge.",
+      "source_name": "TechCrunch",
+      "date": "Tue, 05 May 2020 19:24:56 -0400",
+      "topics": [
+        
+      ],
+      "sentiment": "Negative",
+      "type": "Article",
+      "tickers": [
+        "AMZN"
+      ]
+    },
+    {
+      "news_url": "https://www.fool.com/investing/2020/05/05/us-customs-agency-enlists-amazon-pfizer-3m-in-figh.aspx",
+      "image_url": "https://cdn.snapi.dev/images/v1/i/c/urlhttps3a2f2fgfoolcdncom2feditorial2fimages2f5718522fhealthcare-worker-in-mask-and-head-covering-looking-sad-and-tiredjpgw700opresize.jpg",
+      "title": "U.S. Customs Agency Enlists Amazon, Pfizer, 3M in Fight Against Counterfeit Coronavirus Products",
+      "text": "With the U.S. importing mass quantities of personal protective equipment, medical gear, COVID-19 tests, and more, a lot of substandard and outright counterfeit gear is landing on our shores.",
+      "source_name": "The Motley Fool",
+      "date": "Tue, 05 May 2020 18:01:00 -0400",
+      "topics": [
+        
+      ],
+      "sentiment": "Neutral",
+      "type": "Article",
+      "tickers": [
+        "AMZN",
+        "MMM",
+        "PFE"
+      ]
+    },
+    {
       "news_url": "https://www.kiplinger.com/slideshow/investing/T058-S001-11-best-e-commerce-stocks-for-electrifying-returns/index.html",
       "image_url": "https://cdn.snapi.dev/images/v1/e/x/intro.jpg",
       "title": "11 Best E-Commerce Stocks for Electrifying Returns",
@@ -631,271 +907,6 @@
       "type": "Video",
       "tickers": [
         "AMZN"
-      ]
-    },
-    {
-      "news_url": "https://www.reuters.com/article/us-health-coronavirus-amazon-france/france-deals-blow-to-amazon-as-warehouses-remain-shut-idUSKBN22G1IA",
-      "image_url": "https://cdn.snapi.dev/images/v1/t/y/49-3.jpg",
-      "title": "France deals blow to Amazon as warehouses remain shut",
-      "text": "France has rejected a request from e-commerce giant Amazon  to tap a state-funded scheme to subsidise furloughed employees at its six closed warehouses in the country.",
-      "source_name": "Reuters",
-      "date": "Mon, 04 May 2020 15:09:55 -0400",
-      "topics": [
-        
-      ],
-      "sentiment": "Negative",
-      "type": "Article",
-      "tickers": [
-        "AMZN"
-      ]
-    },
-    {
-      "news_url": "https://techcrunch.com/2020/05/04/aws-launches-the-995-elemental-link-for-streaming-video-to-its-cloud/",
-      "image_url": "https://cdn.snapi.dev/images/v1/w/d/wddww22.jpg",
-      "title": "AWS launches the $995 Elemental Link for streaming video to its cloud",
-      "text": "AWS today announced the launch of the Elemental Link, a small hardware device that makes it easy to connect a live video source to the AWS Elemental Media Live service for broadcast-grade live video processing in the cloud. The $995 Link, which weighs in at less than a pound, is meant to allow Media Live [\u2026]",
-      "source_name": "TechCrunch",
-      "date": "Mon, 04 May 2020 14:07:06 -0400",
-      "topics": [
-        
-      ],
-      "sentiment": "Positive",
-      "type": "Article",
-      "tickers": [
-        "AMZN"
-      ]
-    },
-    {
-      "news_url": "https://www.reuters.com/article/us-health-coronavirus-amazon-france-ware/amazon-plans-to-extend-closure-of-french-warehouses-until-may-8-idUSKBN22G2FE",
-      "image_url": "https://cdn.snapi.dev/images/v1/n/n/akkcnd2.jpg",
-      "title": "Amazon plans to extend closure of French warehouses until May 8",
-      "text": "Amazon  plans to extend the closure of its French warehouses until May 8 included, the e-commerce giant said on Monday.",
-      "source_name": "Reuters",
-      "date": "Mon, 04 May 2020 13:54:19 -0400",
-      "topics": [
-        
-      ],
-      "sentiment": "Negative",
-      "type": "Article",
-      "tickers": [
-        "AMZN"
-      ]
-    },
-    {
-      "news_url": "https://www.cnn.com/2020/05/04/tech/amazon-vp-tim-bray-quits/index.html",
-      "image_url": "https://cdn.snapi.dev/images/v1/w/w/aws-1.jpg",
-      "title": "Amazon VP says he quit over company 'firing whistleblowers'",
-      "text": "Amazon engineer and vice president Tim Bray said he quit his lucrative job at the company over the recent firing of several employees who raised concerns about protections for warehouse workers during the pandemic.",
-      "source_name": "CNN Business",
-      "date": "Mon, 04 May 2020 13:53:55 -0400",
-      "topics": [
-        
-      ],
-      "sentiment": "Negative",
-      "type": "Article",
-      "tickers": [
-        "AMZN"
-      ]
-    },
-    {
-      "news_url": "https://www.forbes.com/sites/johnkoetsier/2020/05/04/amazon-vp-makes-million-dollar-decision-to-quit-over-covid-19-warehouse-worker-firings/",
-      "image_url": "https://cdn.snapi.dev/images/v1/k/n/amazon-vp-makes-million-dollar-decision-to-quit-over-covid-19-warehouse-worker-firings.jpg",
-      "title": "Amazon VP Makes Million-Dollar Decision To Quit Over COVID-19 Warehouse Worker Firings",
-      "text": "\u201cI quit in dismay at Amazon firing whistleblowers who were making noise about warehouse employees frightened of Covid-19.\u201d",
-      "source_name": "Forbes",
-      "date": "Mon, 04 May 2020 13:30:44 -0400",
-      "topics": [
-        
-      ],
-      "sentiment": "Negative",
-      "type": "Article",
-      "tickers": [
-        "AMZN"
-      ]
-    },
-    {
-      "news_url": "http://www.zacks.com/stock/news/913341/post-earning-which-is-better-alphabet-or-facebook",
-      "image_url": "https://cdn.snapi.dev/images/v1/6/o/4000jpgwidth460quality85autoformatfitmaxs0fa3234efc0c40297d3f017c1eb6c417.jpg",
-      "title": "Post-Earning, Which Is Better: Alphabet or Facebook?",
-      "text": "This article breaks down results from Alphabet and Facebook to see if it's time to add position.",
-      "source_name": "Zacks Investment Research",
-      "date": "Mon, 04 May 2020 13:23:00 -0400",
-      "topics": [
-        
-      ],
-      "sentiment": "Neutral",
-      "type": "Article",
-      "tickers": [
-        "GOOG",
-        "GOOGL",
-        "FB"
-      ]
-    },
-    {
-      "news_url": "https://www.nytimes.com/2020/05/04/business/amazon-tim-bray-resigns.html",
-      "image_url": "https://cdn.snapi.dev/images/v1/y/m/kaok2dff.jpg",
-      "title": "An Amazon Vice President Quit Over Firings of Employees Who Protested",
-      "text": "Tim Bray, an engineer who had been a vice president of Amazon\u2019s cloud computing arm, said the firings were \u201cevidence of a vein of toxicity running through the company culture.\u201d",
-      "source_name": "NYTimes",
-      "date": "Mon, 04 May 2020 13:12:39 -0400",
-      "topics": [
-        "paywall"
-      ],
-      "sentiment": "Negative",
-      "type": "Article",
-      "tickers": [
-        "AMZN"
-      ]
-    },
-    {
-      "news_url": "https://www.youtube.com/watch?v=OMa-nCm4PHo",
-      "image_url": "https://cdn.snapi.dev/images/v1/e/f/efdew2.jpg",
-      "title": "Kara Swisher: When this crisis is over, we should fear Big Tech more than ever",
-      "text": "Recode's Kara Swisher joins \"Squawk Alley\" to discuss her concerns with Big Tech in the aftermath of the coronavirus pandemic.",
-      "source_name": "CNBC Television",
-      "date": "Mon, 04 May 2020 13:12:14 -0400",
-      "topics": [
-        
-      ],
-      "sentiment": "Neutral",
-      "type": "Video",
-      "tickers": [
-        "AAPL",
-        "AMZN",
-        "FB",
-        "GOOG",
-        "GOOGL",
-        "MSFT",
-        "NFLX"
-      ]
-    },
-    {
-      "news_url": "https://247wallst.com/technology-3/2020/05/04/what-analysts-are-saying-about-alphabet-stock-going-forward/",
-      "image_url": "https://cdn.snapi.dev/images/v1/8/1/gettyimages-541932072jpgw602.jpg",
-      "title": "What Analysts Are Saying About Alphabet Stock Going Forward",
-      "text": "Alphabet Inc. (NASDAQ: GOOGL) has been one big tech name that has held up relatively well despite the ongoing COVID-19 pandemic.",
-      "source_name": "24/7 Wall Street",
-      "date": "Mon, 04 May 2020 13:00:01 -0400",
-      "topics": [
-        
-      ],
-      "sentiment": "Positive",
-      "type": "Article",
-      "tickers": [
-        "GOOG",
-        "GOOGL"
-      ]
-    },
-    {
-      "news_url": "https://nypost.com/2020/05/04/amazon-vp-quits-calls-company-chickens-t-for-firing-protesters/",
-      "image_url": "https://cdn.snapi.dev/images/v1/i/i/105462231-1537459830288gettyimages-10360937141910x1000-2.jpeg",
-      "title": "Amazon VP quits, calls company \u2018chickens\u2013t\u2019 for firing protesters",
-      "text": "\"I quit in dismay at Amazon firing whistleblowers who were making noise about warehouse employees frightened of Covid-19,\" Bray wrote.",
-      "source_name": "New York Post",
-      "date": "Mon, 04 May 2020 12:59:51 -0400",
-      "topics": [
-        
-      ],
-      "sentiment": "Negative",
-      "type": "Article",
-      "tickers": [
-        "AMZN"
-      ]
-    },
-    {
-      "news_url": "https://www.cnet.com/news/apple-google-give-first-look-at-coronavirus-tracking-tech/",
-      "image_url": "https://cdn.snapi.dev/images/v1/g/g/urlhttps3a2f2fgfoolcdncom2feditorial2fimages2f5676672fgettyimages-1211385096jpgw700opresize.jpg",
-      "title": "Apple, Google give first look at coronavirus tracking tech",
-      "text": "The tech giants continue to refine their coronavirus exposure technology. They're also sharing some code publicly and a look at what apps may look like.",
-      "source_name": "CNET",
-      "date": "Mon, 04 May 2020 12:51:00 -0400",
-      "topics": [
-        
-      ],
-      "sentiment": "Neutral",
-      "type": "Article",
-      "tickers": [
-        "AAPL",
-        "GOOG",
-        "GOOGL"
-      ]
-    },
-    {
-      "news_url": "https://www.fool.com/investing/2020/05/04/5-tech-stocks-with-enough-cash-to-outlast-the-covi.aspx",
-      "image_url": "https://cdn.snapi.dev/images/v1/z/a/vitaldata1600-300x169.jpg",
-      "title": "5 Tech Stocks With Enough Cash to Outlast the COVID-19 Crisis",
-      "text": "Apple and four other tech giants are still sitting on mountains of cash during the crisis.",
-      "source_name": "The Motley Fool",
-      "date": "Mon, 04 May 2020 12:45:00 -0400",
-      "topics": [
-        
-      ],
-      "sentiment": "Positive",
-      "type": "Article",
-      "tickers": [
-        "AAPL",
-        "AMZN",
-        "FB",
-        "GOOG",
-        "GOOGL",
-        "MSFT"
-      ]
-    },
-    {
-      "news_url": "https://www.cnbc.com/2020/05/04/big-techs-earnings-prove-its-immune-to-the-coronavirus.html",
-      "image_url": "https://cdn.snapi.dev/images/v1/i/0/104538797-gettyimages-697900116-subs-bezos-trump-nadella-handshake.jpg",
-      "title": "Big Tech's earnings prove it's immune to the coronavirus",
-      "text": "As many sectors reported devastation from the economic downturn, tech companies have proven largely resilient.",
-      "source_name": "CNBC",
-      "date": "Mon, 04 May 2020 12:42:35 -0400",
-      "topics": [
-        "earnings"
-      ],
-      "sentiment": "Positive",
-      "type": "Article",
-      "tickers": [
-        "AAPL",
-        "AMZN",
-        "FB",
-        "GOOG",
-        "GOOGL",
-        "NFLX"
-      ]
-    },
-    {
-      "news_url": "https://www.cnbc.com/2020/05/04/apple-and-google-release-sample-code-for-contract-tracing-apps.html",
-      "image_url": "https://cdn.snapi.dev/images/v1/c/p/106491323-1587030102679gettyimages-1207755792.jpeg",
-      "title": "Apple and Google reveal what their coronavirus contact tracing system might look like",
-      "text": "Google and Apple are backing a way to trace and notify people who may have been infected with Covid-19 using Bluetooth signals from people's phones anonymously.",
-      "source_name": "CNBC",
-      "date": "Mon, 04 May 2020 12:39:21 -0400",
-      "topics": [
-        
-      ],
-      "sentiment": "Positive",
-      "type": "Article",
-      "tickers": [
-        "AAPL",
-        "GOOG",
-        "GOOGL"
-      ]
-    },
-    {
-      "news_url": "https://techcrunch.com/2020/05/04/apple-and-google-release-sample-code-and-detailed-policies-for-covid-19-exposure-notification-apps/",
-      "image_url": "https://cdn.snapi.dev/images/v1/o/k/p-1-apple-and-google-explain-their-contact-tracing-partnership.jpg",
-      "title": "Apple and Google release sample code, UI and detailed policies for COVID-19 exposure notification apps",
-      "text": "Apple and Google are providing additional resources for developers working with the first version of their Exposure Notification API, the development tools the companies have created and are working on in order to provide a cross-platform way for public health agencies to notify individuals of a potential exposure to a person with a confirmed case [\u2026]",
-      "source_name": "TechCrunch",
-      "date": "Mon, 04 May 2020 12:15:01 -0400",
-      "topics": [
-        
-      ],
-      "sentiment": "Neutral",
-      "type": "Article",
-      "tickers": [
-        "AAPL",
-        "GOOG",
-        "GOOGL"
       ]
     }
   ]

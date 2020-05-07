@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Axios from 'axios';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -6,7 +7,6 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Title from './Title';
 import Progress from '../progress/Progress';
-import Axios from 'axios';
 import Grid from '@material-ui/core/Grid';
 import ProfileNewsCard from './ProfileNewsCard';
 import { Link } from 'react-router-dom';
@@ -15,7 +15,9 @@ import './userProfile.css';
 // Generate Stock Data
 var stockData = [];
 
-const showStock = (name, symbolData, symbol) => {
+
+const showStock = (name, symbolData, symbol, state, setState) => {
+  
   return (
     <React.Fragment>
       <div style={{ margin: '10px' }}>
@@ -53,8 +55,18 @@ const showStock = (name, symbolData, symbol) => {
         </div>
         <div style={{ margin: '20px 0 0 0' }}>
           <Title>Curated News</Title>
+          <select
+            style={{ marginLeft: '20px' }}
+            id="filter"
+            onChange={(e) => (newsChoice(setState,e.target.value))}
+          >
+            <option value="0">All</option>
+            <option value="1">Positive</option>
+            <option value="2">Negative</option>
+            <option value="3">Neutral</option>
+          </select>
           <Grid style={{ display: 'grid' }} container justify="center">
-            <ProfileNewsCard stocks={symbol} />
+            <ProfileNewsCard stocks={symbol} choice={state} />
           </Grid>
         </div>
       </div>
@@ -74,25 +86,39 @@ const getUrlsArr = (stocks) => {
   return url;
 };
 
+const newsChoice = (setState,val) => {
+  setState(val)
+}
+
+
 export const UserProfile = ({ user, data }) => {
   const [loaded, setLoaded] = useState(false);
+  const [choice, setChoice] = useState(0);
 
-  if (data) {
-    let urls = getUrlsArr(user.trackStock);
+  
+  
+  useEffect(() => {
 
-    Axios.all(urls.map((l) => Axios.get(l))).then(
-      Axios.spread(function (...res) {
-        // all requests are now complete
-        stockData.push(res);
-        setLoaded(true);
-      })
-    );
-  }
+    let urls=[]
+
+    if (data) {
+      urls = getUrlsArr(user.trackStock);
+  
+      Axios.all(urls.map((l) => Axios.get(l))).then(
+        Axios.spread(function (...res) {
+          // all requests are now complete
+          stockData.push(res);
+          setLoaded(true);
+        })
+      );
+    }
+  
+  });
 
   return (
     <div>
       {stockData.length > 0 ? (
-        showStock(user.displayName, stockData[0], user.trackStock)
+        showStock(user.displayName, stockData[0], user.trackStock, choice, setChoice)
       ) : (
         <Progress />
       )}
