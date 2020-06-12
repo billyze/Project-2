@@ -6,4 +6,4 @@ We also offer real time graphic data that shows you the performance of a given s
 
 ##Technologies
 
-React, MaterialUI, JavaScript, CSS,
+React, MaterialUI, JavaScript, CSS, HTML
